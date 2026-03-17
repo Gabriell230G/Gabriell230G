@@ -1,25 +1,126 @@
-## Olá 👋
+# 🧑🏻‍💻 Gabriel Gomes
 
-Sou Gabriel Gomes, apaixonado por tecnologia e por criar soluções que gerem impacto real. Vejo a tecnologia como uma ponte entre **lógica, design e inovação**, buscando resolver problemas de forma prática e eficiente. Atualmente, curso **Sistemas de Informação na FIAP** e estou sempre em busca de novos desafios e aprendizados para evoluir tecnicamente.
+**`Desenvolvedor focado em soluções digitais`**
 
-### **🔭 | Atualmente estou trabalhando em:**
-- Projetos da Faculdade FIAP
-- Projetos Pessoais
+Me chamo Gabriel Gomes e sou apaixonado por tecnologia, inovação e por criar soluções que gerem impacto real. Vejo a tecnologia como uma ponte entre **lógica, design e experiência do usuário**, buscando sempre resolver problemas de forma prática e eficiente.
 
-### **📚 | Atualmente estou aprendendo:**
-- Análise de dados com **Excel, Power BI e Banco de Dados**
-- Novos frameworks e bibliotecas focados em **performance e otimização**
-- Aperfeiçoando conhecimentos em **UX/UI, HTML, CSS e JavaScript**
+Atualmente curso **Sistemas de Informação na FIAP** e estou constantemente evoluindo minhas habilidades através de projetos acadêmicos e pessoais, explorando desde desenvolvimento web até análise de dados.
 
-### **📫 | Como entrar em contato comigo:**
-- Email: gabriel.gomes0410@gmail.com
+---
 
-### **🌐 | Minhas redes:**
-- LinkedIn: [Gabriel Gomes](https://www.linkedin.com/in/gabriel-vasconcellos-gomes-76a246246/)
+### 🚀 O que estou fazendo agora
 
-### **⚡ | Curiosidades:**
-- Resolvo **cubo mágico** em cerca de 2 minutos  
-- Sou **faixa preta em judô**  
-- Gosto de desafios de lógica e linguagem, como **Termo** e **Globle**
+➽ Desenvolvendo projetos acadêmicos e aplicações práticas  
+➽ Criando projetos pessoais com foco em **resolução de problemas reais**  
+➽ Evoluindo minhas habilidades em **desenvolvimento web e análise de dados**
 
+---
+
+### 📚 O que estou aprendendo
+
+➽ **Análise de dados** com Excel, Power BI e Banco de Dados  
+➽ **Front-end** (HTML, CSS, JavaScript)  
+➽ Conceitos de **UX/UI e performance**  
+➽ Estruturação de projetos escaláveis  
+
+---
+
+### 🧠 Tecnologias e Ferramentas
+
+<img 
+    align="left" 
+    alt="Figma" 
+    title="Figma"
+    width="30px" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+/>
+<img 
+    align="left" 
+    alt="HTML"
+    title="HTML" 
+    width="30px" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="CSS" 
+    title="CSS"
+    width="30px" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="JavaScript" 
+    title="JavaScript"
+    width="30px" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Python" 
+    title="Python"
+    width="30px" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Java" 
+    title="Java"
+    width="30px" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" 
+/>
+
+<br/>
+<br/>
+
+---
+
+### 📊 Estatísticas
+
+<p>
+  <img 
+    align="left" 
+    height="180" 
+    src="https://github-readme-stats.vercel.app/api?username=Gabriell230G&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
+  />
+
+  <img 
+    align="left" 
+    height="180" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gabriell230G&theme=tokyonight&layout=compact" 
+  />
+</p>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+---
+
+### 📫 Contato
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/gabriel-vasconcellos-gomes-76a246246/">
+    <img 
+      src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+    />
+  </a>
+  <a href="mailto:gabriel.gomes0410@gmail.com">
+    <img 
+      src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"
+    />
+  </a>
+</p>
+
+---
+
+### ⚡ Curiosidades
+
+➽ Resolvo **cubo mágico** 🧊  
+➽ **Faixa preta em judô** 🥋  
+➽ Curto desafios de lógica como **Termo e Globle** 🧠  
 
