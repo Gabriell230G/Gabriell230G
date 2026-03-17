@@ -77,27 +77,19 @@ Atualmente curso **Sistemas de Informação na FIAP** e estou constantemente evo
 
 ### 📊 Estatísticas
 
-<p>
+<p align="left">
   <img 
-    align="left" 
     height="180" 
     src="https://github-readme-stats.vercel.app/api?username=Gabriell230G&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
   />
+</p>
 
+<p align="left">
   <img 
-    align="left" 
     height="180" 
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gabriell230G&theme=tokyonight&layout=compact" 
   />
 </p>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 ---
 
