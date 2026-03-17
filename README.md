@@ -101,18 +101,14 @@ Atualmente curso **Sistemas de Informação na FIAP** e estou constantemente evo
 
 ---
 
-### 📫 Contato
+### 📫 Vamos nos conectar
 
 <p align="left">
   <a href="https://www.linkedin.com/in/gabriel-vasconcellos-gomes-76a246246/">
-    <img 
-      src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
-    />
+    <img src="https://img.shields.io/badge/LinkedIn-Conectar-blue?style=for-the-badge&logo=linkedin">
   </a>
   <a href="mailto:gabriel.gomes0410@gmail.com">
-    <img 
-      src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"
-    />
+    <img src="https://img.shields.io/badge/Email-Contato-red?style=for-the-badge&logo=gmail">
   </a>
 </p>
 
@@ -123,4 +119,5 @@ Atualmente curso **Sistemas de Informação na FIAP** e estou constantemente evo
 ➽ Resolvo **cubo mágico** 🧊  
 ➽ **Faixa preta em judô** 🥋  
 ➽ Curto desafios de lógica como **Termo e Globle** 🧠  
+
 
