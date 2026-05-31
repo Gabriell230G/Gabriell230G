@@ -69,28 +69,18 @@ Atualmente curso **Sistemas de Informação na FIAP** e estou constantemente evo
     width="30px" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" 
 />
-
 <br/>
 <br/>
 
 ---
-
-### 📊 Estatísticas
-
+ 
+### 📊 Atividade
+ 
 <p align="left">
-  <img 
-    height="180" 
-    src="https://github-readme-stats.vercel.app/api?username=Gabriell230G&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
-  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gabriell230G&theme=tokyo-night&hide_border=true&area=true" alt="Gráfico de atividade" width="100%" />
 </p>
-
-<p align="left">
-  <img 
-    height="180" 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gabriell230G&theme=tokyonight&layout=compact" 
-  />
-</p>
-
+💡 Os cards de estatística do GitHub às vezes demoram a carregar (limite de tráfego do serviço gratuito). Se não aparecerem, é só recarregar a página.
+ 
 ---
 
 ### 📫 Vamos nos conectar
@@ -111,5 +101,8 @@ Atualmente curso **Sistemas de Informação na FIAP** e estou constantemente evo
 ➽ Resolvo **cubo mágico** 🧊  
 ➽ **Faixa preta em judô** 🥋  
 ➽ Curto desafios de lógica como **Termo e Globle** 🧠  
+
+
+
 
 
