@@ -1,5 +1,3 @@
-<!-- TODO: trocar os links marcados "TODO" pelos endereços reais dos repositórios. -->
-
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/header.svg" alt="Gabriel Vasconcellos Gomes, Desenvolvimento e Sustentação de Sistemas no Bradesco" width="100%">
@@ -28,11 +26,11 @@ Sou **faixa preta de judô, campeão sul-americano e pan-americano**. Dezesseis 
 
 ### Tecnologias
 
-<div align="center">
+<div>
 
 <img src="https://skillicons.dev/icons?i=js,html,css,java,python,mysql,react,nodejs&theme=dark" alt="JavaScript, HTML, CSS, Java, Python, SQL, React, Node.js">
 <br>
-<img src="https://skillicons.dev/icons?i=git,github,vscode,figma,idea,linux&theme=dark" alt="Git, GitHub, VS Code, Figma, IntelliJ IDEA, Linux">
+<img src="https://skillicons.dev/icons?i=git,github,vscode,figma,idea&theme=dark" alt="Git, GitHub, VS Code, Figma, IntelliJ IDEA">
 
 </div>
 
@@ -48,17 +46,20 @@ Sou **faixa preta de judô, campeão sul-americano e pan-americano**. Dezesseis 
 
 ### Projetos
 
-**[Protege+](https://github.com/Gabriell230G?tab=repositories)** · plataforma GovTech de denúncias anônimas <!-- TODO -->
-Desenvolvido para o HackGov e o Enterprise Challenge da FIAP, em parceria com a EGESP. Recebe denúncias com geolocalização, áudio e QR Code, mostra a concentração dos casos em um mapa do Brasil e controla o acesso da gestão por perfil de permissão. Protagonista do projeto é quem denuncia: anonimato e política de privacidade vieram antes de qualquer funcionalidade.
+**[Protege+](https://github.com/Gabriell230G/hackgovProtegeMais)** · plataforma GovTech de denúncias anônimas
+Desenvolvido para o HackGov e o Enterprise Challenge da FIAP, em parceria com a EGESP. Recebe denúncias com geolocalização, áudio e QR Code, mostra a concentração dos casos em um mapa de calor do Brasil e controla o acesso da gestão por perfil de permissão. Anonimato e política de privacidade vieram antes de qualquer funcionalidade, porque o protagonista do sistema é quem denuncia.
 `React 18` `Java` `Oracle` `RBAC` `PT/EN` `Dark mode`
+[`Ver a plataforma`](https://gabriell230g.github.io/hackgovProtegeMais/)
 
-**[UTOPIA](https://github.com/Gabriell230G?tab=repositories)** · plataforma de inteligência urbana <!-- TODO -->
-Campeã da Global Solution Space Connect 2026 na FIAP. Transforma dado de satélite da NASA e da ESA e dado público do IBGE em uma nota comparável de qualidade de vida por município, com mapa interativo e dashboard de análise.
-`Java 17` `Leaflet.js` `HTML/CSS/JS`
+**[UTOPIA](https://github.com/Gabriell230G/Utopia)** · inteligência urbana a partir de dados de satélite
+Campeã da Global Solution Space Connect 2026 na FIAP. Cruza imagens de satélite da NASA e da ESA com dados do IBGE e devolve o Índice Utopia, nota de 0 a 100 por município ponderando infraestrutura, saúde, educação, área verde e risco de enchente. São três telas integradas: landing institucional, mapa interativo em Leaflet com camadas temáticas e pontos estratégicos de intervenção, e dashboard com navegação Estado ➜ Região ➜ Município, projeção para 2030 e alertas por severidade.
+`Java 17` `Leaflet` `Canvas` `HTML/CSS/JS`
+[`Ver a plataforma`](https://gabriell230g.github.io/Utopia/)
 
-**[Judo Quest](https://github.com/Gabriell230G?tab=repositories)** · educação gamificada de judô <!-- TODO -->
-Ensina judô para quem está começando: seis minigames, progressão com XP e 96 técnicas em vídeo do Kodokan. Roda offline, sem back-end e sem login, o que permite abrir no celular de qualquer academia.
-`HTML` `CSS` `JavaScript` `localStorage`
+**[GameHub](https://github.com/Gabriell230G/GameHub)** · sete jogos clássicos em JavaScript puro
+Tic Tac Toe, Sudoku, Tetris, Snake, Ping Pong, Jogo da Memória e 2048, recriados do zero. Cada jogo resolve um problema de lógica diferente: colisão e rotação de peça no Tetris, validação de regra no Sudoku, fusão de valores em grid no 2048, física simples no Ping Pong. Sem framework e sem biblioteca, manipulação direta de DOM, no ar pelo GitHub Pages.
+`HTML5` `CSS3` `JavaScript` `GitHub Pages`
+[`Jogar agora`](https://gabriell230g.github.io/GameHub/)
 
 <sub>[Ver todos os repositórios ➜](https://github.com/Gabriell230G?tab=repositories)</sub>
 
