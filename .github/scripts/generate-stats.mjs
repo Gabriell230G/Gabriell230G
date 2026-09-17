@@ -64,7 +64,7 @@ async function coletar() {
     estrelas,
     contribuicoes: cc?.contributionCalendar?.totalContributions ?? null,
     commits: cc ? cc.totalCommitContributions + (cc.restrictedContributionsCount || 0) : null,
-    langs: topo,
+    langs: [], // desligada: o linguist conta JS dentro de .html como HTML
     seguidores: user.followers,
   };
 }
