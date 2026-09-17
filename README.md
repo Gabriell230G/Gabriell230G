@@ -74,7 +74,9 @@ Tic Tac Toe, Sudoku, Tetris, Snake, Ping Pong, Jogo da Memória e 2048, recriado
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-light.svg">
   <img alt="Trajetória: 2026 estágio no Bradesco; 2026 campeão da Global Solution Space Connect com a UTOPIA; 2026 Protege+ no HackGov e no Enterprise Challenge; 2025 início do Bacharelado em Sistemas de Informação na FIAP; 2023 fundação do Clube de Ciências Econômicas; 2021 ensino médio no Mackenzie com Honra Acadêmica; 2010 início no judô, hoje faixa preta e campeão sul-americano e pan-americano" src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-dark.svg" width="100%">
 </picture>
-<!-- Para editar a trajetória: mude ITEMS em .github/scripts/generate-timeline.mjs e rode `node .github/scripts/generate-timeline.mjs` -->
+<!-- Trajetória, header e chips saem de .github/scripts/data.mjs.
+     Edite lá e rode `node .github/scripts/build.mjs` para regerar os SVG.
+     As estatísticas são recalculadas sozinhas pelo workflow .github/workflows/assets.yml. -->
 
 </div>
 
