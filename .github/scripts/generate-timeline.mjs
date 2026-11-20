@@ -7,6 +7,30 @@ import { ITEMS } from './data.mjs';
 
 const W = 1000, RX = 500, CW = 410, CH = 76, ROW = 64, TOP = 34, GAP_RAIL = 44;
 
+// cor por posicao: desce em degrade suave, do laranja avermelhado ao verde,
+// sem voltar atras. O tipo continua no icone e na etiqueta.
+const ESCALA = ['clay', 'peach', 'gold', 'sage'];
+const hex2hsl = (h) => {
+  const [r, g, b] = [1, 3, 5].map((k) => parseInt(h.slice(k, k + 2), 16) / 255);
+  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), l = (mx + mn) / 2, d = mx - mn;
+  if (!d) return [0, 0, l];
+  const s = d / (1 - Math.abs(2 * l - 1));
+  const hh = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  return [(hh * 60 + 360) % 360, s, l];
+};
+const hsl2hex = ([h, s, l]) => {
+  const f = (n) => { const k = (n + h / 30) % 12, a = s * Math.min(l, 1 - l);
+    return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); };
+  return ('#' + f(0) + f(8) + f(4)).toUpperCase();
+};
+// interpola em HSL para o meio do caminho nao ficar cor de lama
+const corNa = (i, isDark) => {
+  const u = (i / (ITEMS.length - 1)) * (ESCALA.length - 1);
+  const k = Math.min(Math.floor(u), ESCALA.length - 2), f = u - k;
+  const a = hex2hsl(pick(ESCALA[k], isDark)), b = hex2hsl(pick(ESCALA[k + 1], isDark));
+  return hsl2hex(a.map((v, j) => v + (b[j] - v) * f));
+};
+
 const TIPOS = {
   trofeu:   { rot: 'CONQUISTA', cor: 'gold' },
   projeto:  { rot: 'PROJETO', cor: 'peach' },
@@ -38,7 +62,7 @@ function build(isDark) {
 
   let anoAnterior = null;
   const els = ITEMS.map((it, i) => {
-    const tp = TIPOS[it.tipo], c = pick(tp.cor, isDark);
+    const tp = TIPOS[it.tipo], c = corNa(i, isDark);
     const esq = i % 2 === 0;
     const y = TOP + ROW * i, cy = y + CH / 2;
     const x = esq ? RX - 40 - CW : RX + 40;
@@ -69,13 +93,13 @@ function build(isDark) {
   }).join('');
 
   const bleeds = ITEMS.map((it, i) => {
-    const c = pick(TIPOS[it.tipo].cor, isDark), esq = i % 2 === 0;
+    const c = corNa(i, isDark), esq = i % 2 === 0;
     const o = isDark ? .22 : .10;
     return `<linearGradient id="bl${esq ? 'D' : 'E'}${i}" x1="${esq ? 1 : 0}" y1="0" x2="${esq ? 0 : 1}" y2="0">
       <stop offset="0" stop-color="${c}" stop-opacity="${o}"/><stop offset=".6" stop-color="${c}" stop-opacity="0"/></linearGradient>`;
   }).join('');
 
-  const cores = ITEMS.map((it) => pick(TIPOS[it.tipo].cor, isDark));
+  const cores = ITEMS.map((it, i) => corNa(i, isDark));
   const paradas = cores.map((c, i) => `<stop offset="${((i / (cores.length - 1)) * 100).toFixed(1)}%" stop-color="${c}"/>`).join('');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Trajetória: ${ITEMS.map(i => `${i.ano}, ${i.titulo}: ${i.desc}`).join('; ')}">

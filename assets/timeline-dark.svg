@@ -23,16 +23,16 @@
     </filter>
     <radialGradient id="halo"><stop offset="0" stop-color="#F2A683" stop-opacity=".9"/><stop offset="1" stop-color="#F2A683" stop-opacity="0"/></radialGradient>
     <linearGradient id="blD0" x1="1" y1="0" x2="0" y2="0">
-      <stop offset="0" stop-color="#F2A683" stop-opacity="0.22"/><stop offset=".6" stop-color="#F2A683" stop-opacity="0"/></linearGradient><linearGradient id="blE1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F4C26B" stop-opacity="0.22"/><stop offset=".6" stop-color="#F4C26B" stop-opacity="0"/></linearGradient><linearGradient id="blD2" x1="1" y1="0" x2="0" y2="0">
-      <stop offset="0" stop-color="#F2A683" stop-opacity="0.22"/><stop offset=".6" stop-color="#F2A683" stop-opacity="0"/></linearGradient><linearGradient id="blE3" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F4C26B" stop-opacity="0.22"/><stop offset=".6" stop-color="#F4C26B" stop-opacity="0"/></linearGradient><linearGradient id="blD4" x1="1" y1="0" x2="0" y2="0">
-      <stop offset="0" stop-color="#D9826A" stop-opacity="0.22"/><stop offset=".6" stop-color="#D9826A" stop-opacity="0"/></linearGradient><linearGradient id="blE5" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#46CF8D" stop-opacity="0.22"/><stop offset=".6" stop-color="#46CF8D" stop-opacity="0"/></linearGradient><linearGradient id="blD6" x1="1" y1="0" x2="0" y2="0">
-      <stop offset="0" stop-color="#46CF8D" stop-opacity="0.22"/><stop offset=".6" stop-color="#46CF8D" stop-opacity="0"/></linearGradient><linearGradient id="blE7" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#46CF8D" stop-opacity="0.22"/><stop offset=".6" stop-color="#46CF8D" stop-opacity="0"/></linearGradient><linearGradient id="blD8" x1="1" y1="0" x2="0" y2="0">
-      <stop offset="0" stop-color="#F4C26B" stop-opacity="0.22"/><stop offset=".6" stop-color="#F4C26B" stop-opacity="0"/></linearGradient>
-    <linearGradient id="rail" gradientUnits="userSpaceOnUse" x1="0" y1="50" x2="0" y2="598"><stop offset="0.0%" stop-color="#F2A683"/><stop offset="12.5%" stop-color="#F4C26B"/><stop offset="25.0%" stop-color="#F2A683"/><stop offset="37.5%" stop-color="#F4C26B"/><stop offset="50.0%" stop-color="#D9826A"/><stop offset="62.5%" stop-color="#46CF8D"/><stop offset="75.0%" stop-color="#46CF8D"/><stop offset="87.5%" stop-color="#46CF8D"/><stop offset="100.0%" stop-color="#F4C26B"/></linearGradient>
+      <stop offset="0" stop-color="#D9826A" stop-opacity="0.22"/><stop offset=".6" stop-color="#D9826A" stop-opacity="0"/></linearGradient><linearGradient id="blE1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E48F72" stop-opacity="0.22"/><stop offset=".6" stop-color="#E48F72" stop-opacity="0"/></linearGradient><linearGradient id="blD2" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#ED9D7C" stop-opacity="0.22"/><stop offset=".6" stop-color="#ED9D7C" stop-opacity="0"/></linearGradient><linearGradient id="blE3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F2A980" stop-opacity="0.22"/><stop offset=".6" stop-color="#F2A980" stop-opacity="0"/></linearGradient><linearGradient id="blD4" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#F3B277" stop-opacity="0.22"/><stop offset=".6" stop-color="#F3B277" stop-opacity="0"/></linearGradient><linearGradient id="blE5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F4BE6E" stop-opacity="0.22"/><stop offset=".6" stop-color="#F4BE6E" stop-opacity="0"/></linearGradient><linearGradient id="blD6" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#DEED60" stop-opacity="0.22"/><stop offset=".6" stop-color="#DEED60" stop-opacity="0"/></linearGradient><linearGradient id="blE7" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6CDF52" stop-opacity="0.22"/><stop offset=".6" stop-color="#6CDF52" stop-opacity="0"/></linearGradient><linearGradient id="blD8" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#46CF8D" stop-opacity="0.22"/><stop offset=".6" stop-color="#46CF8D" stop-opacity="0"/></linearGradient>
+    <linearGradient id="rail" gradientUnits="userSpaceOnUse" x1="0" y1="50" x2="0" y2="598"><stop offset="0.0%" stop-color="#D9826A"/><stop offset="12.5%" stop-color="#E48F72"/><stop offset="25.0%" stop-color="#ED9D7C"/><stop offset="37.5%" stop-color="#F2A980"/><stop offset="50.0%" stop-color="#F3B277"/><stop offset="62.5%" stop-color="#F4BE6E"/><stop offset="75.0%" stop-color="#DEED60"/><stop offset="87.5%" stop-color="#6CDF52"/><stop offset="100.0%" stop-color="#46CF8D"/></linearGradient>
   </defs>
   <rect x="498.5" y="50" width="3" height="548" rx="1.5" fill="#1E2333"/>
   <rect class="trilho" x="498.5" y="50" width="3" height="548" rx="1.5" fill="url(#rail)" filter="url(#gb)"/>
@@ -42,126 +42,126 @@
   </g>
   
   <g class="it" style="animation-delay:0.25s; --dx:-18px">
-    <line x1="460" x2="470" y1="72" y2="72" stroke="#F2A683" stroke-opacity=".5" stroke-dasharray="3 4"/>
+    <line x1="460" x2="470" y1="72" y2="72" stroke="#D9826A" stroke-opacity=".5" stroke-dasharray="3 4"/>
     <rect x="50" y="34" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="34" width="410" height="76" rx="16" fill="url(#blD0)"/>
-    <rect x="50.5" y="34.5" width="409" height="75" rx="16" fill="none" stroke="#F2A683" stroke-opacity="0.3"/>
-    <circle cx="88" cy="72" r="21" fill="#F2A683" fill-opacity="0.13"/>
-    <path d="M84 66l-6 6 6 6M92 66l6 6-6 6" fill="none" stroke="#F2A683" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="122" y="58" class="tag" fill="#F2A683">PROJETO</text>
+    <rect x="50.5" y="34.5" width="409" height="75" rx="16" fill="none" stroke="#D9826A" stroke-opacity="0.3"/>
+    <circle cx="88" cy="72" r="21" fill="#D9826A" fill-opacity="0.13"/>
+    <path d="M84 66l-6 6 6 6M92 66l6 6-6 6" fill="none" stroke="#D9826A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="122" y="58" class="tag" fill="#D9826A">PROJETO</text>
     <text x="122" y="80" class="tit">Tami, na GS CitizenTech</text>
     <text x="122" y="98" class="des">Agente de saúde que orienta para onde ir</text>
   </g>
-  <g class="no" style="animation-delay:0.25s"><rect x="470" y="59" width="60" height="26" rx="13" fill="#0B0D15" stroke="#F2A683" stroke-width="2"/>
-      <text x="500" y="77" text-anchor="middle" class="ano" fill="#F2A683">2026</text></g>
+  <g class="no" style="animation-delay:0.25s"><rect x="470" y="59" width="60" height="26" rx="13" fill="#0B0D15" stroke="#D9826A" stroke-width="2"/>
+      <text x="500" y="77" text-anchor="middle" class="ano" fill="#D9826A">2026</text></g>
   <g class="it" style="animation-delay:0.38s; --dx:18px">
-    <line x1="506" x2="540" y1="136" y2="136" stroke="#F4C26B" stroke-opacity=".5" stroke-dasharray="3 4"/>
+    <line x1="506" x2="540" y1="136" y2="136" stroke="#E48F72" stroke-opacity=".5" stroke-dasharray="3 4"/>
     <rect x="540" y="98" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="540" y="98" width="410" height="76" rx="16" fill="url(#blE1)"/>
-    <rect x="540.5" y="98.5" width="409" height="75" rx="16" fill="none" stroke="#F4C26B" stroke-opacity="0.3"/>
-    <circle cx="578" cy="136" r="21" fill="#F4C26B" fill-opacity="0.13"/>
-    <path d="M571 128h14v4a7 7 0 0 1-14 0z" fill="#F4C26B"/>
-      <path d="M571 130h-3.5a3.5 3.5 0 0 0 4 4.5M585 130h3.5a3.5 3.5 0 0 1-4 4.5" fill="none" stroke="#F4C26B" stroke-width="1.8"/>
-      <rect x="576.5" y="138" width="3" height="4" fill="#F4C26B"/><rect x="572.5" y="142" width="11" height="3" rx="1" fill="#F4C26B"/>
-    <text x="612" y="122" class="tag" fill="#F4C26B">CONQUISTA</text>
+    <rect x="540.5" y="98.5" width="409" height="75" rx="16" fill="none" stroke="#E48F72" stroke-opacity="0.3"/>
+    <circle cx="578" cy="136" r="21" fill="#E48F72" fill-opacity="0.13"/>
+    <path d="M571 128h14v4a7 7 0 0 1-14 0z" fill="#E48F72"/>
+      <path d="M571 130h-3.5a3.5 3.5 0 0 0 4 4.5M585 130h3.5a3.5 3.5 0 0 1-4 4.5" fill="none" stroke="#E48F72" stroke-width="1.8"/>
+      <rect x="576.5" y="138" width="3" height="4" fill="#E48F72"/><rect x="572.5" y="142" width="11" height="3" rx="1" fill="#E48F72"/>
+    <text x="612" y="122" class="tag" fill="#E48F72">CONQUISTA</text>
     <text x="612" y="144" class="tit">4º no Mundial de Kata da IJF</text>
     <text x="612" y="162" class="des">Sarajevo, Bósnia e Herzegovina</text>
   </g>
-  <g class="no" style="animation-delay:0.38s"><circle cx="500" cy="136" r="6" fill="#0B0D15" stroke="#F4C26B" stroke-width="2.5"/></g>
+  <g class="no" style="animation-delay:0.38s"><circle cx="500" cy="136" r="6" fill="#0B0D15" stroke="#E48F72" stroke-width="2.5"/></g>
   <g class="it" style="animation-delay:0.51s; --dx:-18px">
-    <line x1="460" x2="494" y1="200" y2="200" stroke="#F2A683" stroke-opacity=".5" stroke-dasharray="3 4"/>
+    <line x1="460" x2="494" y1="200" y2="200" stroke="#ED9D7C" stroke-opacity=".5" stroke-dasharray="3 4"/>
     <rect x="50" y="162" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="162" width="410" height="76" rx="16" fill="url(#blD2)"/>
-    <rect x="50.5" y="162.5" width="409" height="75" rx="16" fill="none" stroke="#F2A683" stroke-opacity="0.3"/>
-    <circle cx="88" cy="200" r="21" fill="#F2A683" fill-opacity="0.13"/>
-    <path d="M84 194l-6 6 6 6M92 194l6 6-6 6" fill="none" stroke="#F2A683" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="122" y="186" class="tag" fill="#F2A683">PROJETO</text>
+    <rect x="50.5" y="162.5" width="409" height="75" rx="16" fill="none" stroke="#ED9D7C" stroke-opacity="0.3"/>
+    <circle cx="88" cy="200" r="21" fill="#ED9D7C" fill-opacity="0.13"/>
+    <path d="M84 194l-6 6 6 6M92 194l6 6-6 6" fill="none" stroke="#ED9D7C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="122" y="186" class="tag" fill="#ED9D7C">PROJETO</text>
     <text x="122" y="208" class="tit">Protege+, no HackGov</text>
     <text x="122" y="226" class="des">Denúncias anônimas, em parceria com a EGESP</text>
   </g>
-  <g class="no" style="animation-delay:0.51s"><circle cx="500" cy="200" r="6" fill="#0B0D15" stroke="#F2A683" stroke-width="2.5"/></g>
+  <g class="no" style="animation-delay:0.51s"><circle cx="500" cy="200" r="6" fill="#0B0D15" stroke="#ED9D7C" stroke-width="2.5"/></g>
   <g class="it" style="animation-delay:0.64s; --dx:18px">
-    <line x1="506" x2="540" y1="264" y2="264" stroke="#F4C26B" stroke-opacity=".5" stroke-dasharray="3 4"/>
+    <line x1="506" x2="540" y1="264" y2="264" stroke="#F2A980" stroke-opacity=".5" stroke-dasharray="3 4"/>
     <rect x="540" y="226" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="540" y="226" width="410" height="76" rx="16" fill="url(#blE3)"/>
-    <rect x="540.5" y="226.5" width="409" height="75" rx="16" fill="none" stroke="#F4C26B" stroke-opacity="0.3"/>
-    <circle cx="578" cy="264" r="21" fill="#F4C26B" fill-opacity="0.13"/>
-    <path d="M571 256h14v4a7 7 0 0 1-14 0z" fill="#F4C26B"/>
-      <path d="M571 258h-3.5a3.5 3.5 0 0 0 4 4.5M585 258h3.5a3.5 3.5 0 0 1-4 4.5" fill="none" stroke="#F4C26B" stroke-width="1.8"/>
-      <rect x="576.5" y="266" width="3" height="4" fill="#F4C26B"/><rect x="572.5" y="270" width="11" height="3" rx="1" fill="#F4C26B"/>
-    <text x="612" y="250" class="tag" fill="#F4C26B">CONQUISTA</text>
+    <rect x="540.5" y="226.5" width="409" height="75" rx="16" fill="none" stroke="#F2A980" stroke-opacity="0.3"/>
+    <circle cx="578" cy="264" r="21" fill="#F2A980" fill-opacity="0.13"/>
+    <path d="M571 256h14v4a7 7 0 0 1-14 0z" fill="#F2A980"/>
+      <path d="M571 258h-3.5a3.5 3.5 0 0 0 4 4.5M585 258h3.5a3.5 3.5 0 0 1-4 4.5" fill="none" stroke="#F2A980" stroke-width="1.8"/>
+      <rect x="576.5" y="266" width="3" height="4" fill="#F2A980"/><rect x="572.5" y="270" width="11" height="3" rx="1" fill="#F2A980"/>
+    <text x="612" y="250" class="tag" fill="#F2A980">CONQUISTA</text>
     <text x="612" y="272" class="tit">Campeão da Global Solution</text>
     <text x="612" y="290" class="des">Space Connect, com a UTOPIA</text>
   </g>
-  <g class="no" style="animation-delay:0.64s"><circle cx="500" cy="264" r="6" fill="#0B0D15" stroke="#F4C26B" stroke-width="2.5"/></g>
+  <g class="no" style="animation-delay:0.64s"><circle cx="500" cy="264" r="6" fill="#0B0D15" stroke="#F2A980" stroke-width="2.5"/></g>
   <g class="it" style="animation-delay:0.77s; --dx:-18px">
-    <line x1="460" x2="494" y1="328" y2="328" stroke="#D9826A" stroke-opacity=".5" stroke-dasharray="3 4"/>
+    <line x1="460" x2="494" y1="328" y2="328" stroke="#F3B277" stroke-opacity=".5" stroke-dasharray="3 4"/>
     <rect x="50" y="290" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="290" width="410" height="76" rx="16" fill="url(#blD4)"/>
-    <rect x="50.5" y="290.5" width="409" height="75" rx="16" fill="none" stroke="#D9826A" stroke-opacity="0.3"/>
-    <circle cx="88" cy="328" r="21" fill="#D9826A" fill-opacity="0.13"/>
-    <rect x="79" y="323" width="18" height="13" rx="3" fill="none" stroke="#D9826A" stroke-width="2"/>
-      <path d="M84.5 323v-3h7v3M79 329h18" fill="none" stroke="#D9826A" stroke-width="2"/>
-    <text x="122" y="314" class="tag" fill="#D9826A">TRABALHO</text>
+    <rect x="50.5" y="290.5" width="409" height="75" rx="16" fill="none" stroke="#F3B277" stroke-opacity="0.3"/>
+    <circle cx="88" cy="328" r="21" fill="#F3B277" fill-opacity="0.13"/>
+    <rect x="79" y="323" width="18" height="13" rx="3" fill="none" stroke="#F3B277" stroke-width="2"/>
+      <path d="M84.5 323v-3h7v3M79 329h18" fill="none" stroke="#F3B277" stroke-width="2"/>
+    <text x="122" y="314" class="tag" fill="#F3B277">TRABALHO</text>
     <text x="122" y="336" class="tit">Estágio no Bradesco</text>
     <text x="122" y="354" class="des">Desenvolvimento e Sustentação de Sistemas</text>
   </g>
-  <g class="no" style="animation-delay:0.77s"><circle cx="500" cy="328" r="6" fill="#0B0D15" stroke="#D9826A" stroke-width="2.5"/></g>
+  <g class="no" style="animation-delay:0.77s"><circle cx="500" cy="328" r="6" fill="#0B0D15" stroke="#F3B277" stroke-width="2.5"/></g>
   <g class="it" style="animation-delay:0.90s; --dx:18px">
-    <line x1="530" x2="540" y1="392" y2="392" stroke="#46CF8D" stroke-opacity=".5" stroke-dasharray="3 4"/>
+    <line x1="530" x2="540" y1="392" y2="392" stroke="#F4BE6E" stroke-opacity=".5" stroke-dasharray="3 4"/>
     <rect x="540" y="354" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="540" y="354" width="410" height="76" rx="16" fill="url(#blE5)"/>
-    <rect x="540.5" y="354.5" width="409" height="75" rx="16" fill="none" stroke="#46CF8D" stroke-opacity="0.3"/>
-    <circle cx="578" cy="392" r="21" fill="#46CF8D" fill-opacity="0.13"/>
-    <path d="M578 384l11 5-11 5-11-5z" fill="#46CF8D"/>
-      <path d="M572 392v4c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-4" fill="none" stroke="#46CF8D" stroke-width="2"/>
-    <text x="612" y="378" class="tag" fill="#46CF8D">ESTUDO</text>
+    <rect x="540.5" y="354.5" width="409" height="75" rx="16" fill="none" stroke="#F4BE6E" stroke-opacity="0.3"/>
+    <circle cx="578" cy="392" r="21" fill="#F4BE6E" fill-opacity="0.13"/>
+    <path d="M578 384l11 5-11 5-11-5z" fill="#F4BE6E"/>
+      <path d="M572 392v4c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-4" fill="none" stroke="#F4BE6E" stroke-width="2"/>
+    <text x="612" y="378" class="tag" fill="#F4BE6E">ESTUDO</text>
     <text x="612" y="400" class="tit">Entrada na FIAP</text>
     <text x="612" y="418" class="des">Sistemas de Informação, 2025 a 2028</text>
   </g>
-  <g class="no" style="animation-delay:0.90s"><rect x="470" y="379" width="60" height="26" rx="13" fill="#0B0D15" stroke="#46CF8D" stroke-width="2"/>
-      <text x="500" y="397" text-anchor="middle" class="ano" fill="#46CF8D">2025</text></g>
+  <g class="no" style="animation-delay:0.90s"><rect x="470" y="379" width="60" height="26" rx="13" fill="#0B0D15" stroke="#F4BE6E" stroke-width="2"/>
+      <text x="500" y="397" text-anchor="middle" class="ano" fill="#F4BE6E">2025</text></g>
   <g class="it" style="animation-delay:1.03s; --dx:-18px">
-    <line x1="460" x2="470" y1="456" y2="456" stroke="#46CF8D" stroke-opacity=".5" stroke-dasharray="3 4"/>
+    <line x1="460" x2="470" y1="456" y2="456" stroke="#DEED60" stroke-opacity=".5" stroke-dasharray="3 4"/>
     <rect x="50" y="418" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="418" width="410" height="76" rx="16" fill="url(#blD6)"/>
-    <rect x="50.5" y="418.5" width="409" height="75" rx="16" fill="none" stroke="#46CF8D" stroke-opacity="0.3"/>
-    <circle cx="88" cy="456" r="21" fill="#46CF8D" fill-opacity="0.13"/>
-    <path d="M88 448l11 5-11 5-11-5z" fill="#46CF8D"/>
-      <path d="M82 456v4c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-4" fill="none" stroke="#46CF8D" stroke-width="2"/>
-    <text x="122" y="442" class="tag" fill="#46CF8D">ESTUDO</text>
+    <rect x="50.5" y="418.5" width="409" height="75" rx="16" fill="none" stroke="#DEED60" stroke-opacity="0.3"/>
+    <circle cx="88" cy="456" r="21" fill="#DEED60" fill-opacity="0.13"/>
+    <path d="M88 448l11 5-11 5-11-5z" fill="#DEED60"/>
+      <path d="M82 456v4c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-4" fill="none" stroke="#DEED60" stroke-width="2"/>
+    <text x="122" y="442" class="tag" fill="#DEED60">ESTUDO</text>
     <text x="122" y="464" class="tit">Clube das Ciências Econômicas</text>
     <text x="122" y="482" class="des">Cofundador, com visitas à FGV e ao IBMEC</text>
   </g>
-  <g class="no" style="animation-delay:1.03s"><rect x="470" y="443" width="60" height="26" rx="13" fill="#0B0D15" stroke="#46CF8D" stroke-width="2"/>
-      <text x="500" y="461" text-anchor="middle" class="ano" fill="#46CF8D">2024</text></g>
+  <g class="no" style="animation-delay:1.03s"><rect x="470" y="443" width="60" height="26" rx="13" fill="#0B0D15" stroke="#DEED60" stroke-width="2"/>
+      <text x="500" y="461" text-anchor="middle" class="ano" fill="#DEED60">2024</text></g>
   <g class="it" style="animation-delay:1.16s; --dx:18px">
-    <line x1="530" x2="540" y1="520" y2="520" stroke="#46CF8D" stroke-opacity=".5" stroke-dasharray="3 4"/>
+    <line x1="530" x2="540" y1="520" y2="520" stroke="#6CDF52" stroke-opacity=".5" stroke-dasharray="3 4"/>
     <rect x="540" y="482" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="540" y="482" width="410" height="76" rx="16" fill="url(#blE7)"/>
-    <rect x="540.5" y="482.5" width="409" height="75" rx="16" fill="none" stroke="#46CF8D" stroke-opacity="0.3"/>
-    <circle cx="578" cy="520" r="21" fill="#46CF8D" fill-opacity="0.13"/>
-    <path d="M578 512l11 5-11 5-11-5z" fill="#46CF8D"/>
-      <path d="M572 520v4c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-4" fill="none" stroke="#46CF8D" stroke-width="2"/>
-    <text x="612" y="506" class="tag" fill="#46CF8D">ESTUDO</text>
+    <rect x="540.5" y="482.5" width="409" height="75" rx="16" fill="none" stroke="#6CDF52" stroke-opacity="0.3"/>
+    <circle cx="578" cy="520" r="21" fill="#6CDF52" fill-opacity="0.13"/>
+    <path d="M578 512l11 5-11 5-11-5z" fill="#6CDF52"/>
+      <path d="M572 520v4c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-4" fill="none" stroke="#6CDF52" stroke-width="2"/>
+    <text x="612" y="506" class="tag" fill="#6CDF52">ESTUDO</text>
     <text x="612" y="528" class="tit">Colégio Mackenzie</text>
     <text x="612" y="546" class="des">Ensino médio com Honra Acadêmica</text>
   </g>
-  <g class="no" style="animation-delay:1.16s"><rect x="470" y="507" width="60" height="26" rx="13" fill="#0B0D15" stroke="#46CF8D" stroke-width="2"/>
-      <text x="500" y="525" text-anchor="middle" class="ano" fill="#46CF8D">2021</text></g>
+  <g class="no" style="animation-delay:1.16s"><rect x="470" y="507" width="60" height="26" rx="13" fill="#0B0D15" stroke="#6CDF52" stroke-width="2"/>
+      <text x="500" y="525" text-anchor="middle" class="ano" fill="#6CDF52">2021</text></g>
   <g class="it" style="animation-delay:1.29s; --dx:-18px">
-    <line x1="460" x2="470" y1="584" y2="584" stroke="#F4C26B" stroke-opacity=".5" stroke-dasharray="3 4"/>
+    <line x1="460" x2="470" y1="584" y2="584" stroke="#46CF8D" stroke-opacity=".5" stroke-dasharray="3 4"/>
     <rect x="50" y="546" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="546" width="410" height="76" rx="16" fill="url(#blD8)"/>
-    <rect x="50.5" y="546.5" width="409" height="75" rx="16" fill="none" stroke="#F4C26B" stroke-opacity="0.3"/>
-    <circle cx="88" cy="584" r="21" fill="#F4C26B" fill-opacity="0.13"/>
-    <rect x="78" y="581" width="20" height="5" rx="1.5" fill="#F4C26B"/>
-      <rect x="85" y="579" width="6" height="9" rx="1.5" fill="#F4C26B"/>
-      <path d="M86.5 587l-3.5 7M89.5 587l3.5 7" stroke="#F4C26B" stroke-width="2.6" stroke-linecap="round"/>
-    <text x="122" y="570" class="tag" fill="#F4C26B">JUDÔ</text>
+    <rect x="50.5" y="546.5" width="409" height="75" rx="16" fill="none" stroke="#46CF8D" stroke-opacity="0.3"/>
+    <circle cx="88" cy="584" r="21" fill="#46CF8D" fill-opacity="0.13"/>
+    <rect x="78" y="581" width="20" height="5" rx="1.5" fill="#46CF8D"/>
+      <rect x="85" y="579" width="6" height="9" rx="1.5" fill="#46CF8D"/>
+      <path d="M86.5 587l-3.5 7M89.5 587l3.5 7" stroke="#46CF8D" stroke-width="2.6" stroke-linecap="round"/>
+    <text x="122" y="570" class="tag" fill="#46CF8D">JUDÔ</text>
     <text x="122" y="592" class="tit">Primeiro dia no tatame</text>
     <text x="122" y="610" class="des">Associação Alto da Lapa, hoje faixa preta</text>
   </g>
-  <g class="no" style="animation-delay:1.29s"><rect x="470" y="571" width="60" height="26" rx="13" fill="#0B0D15" stroke="#F4C26B" stroke-width="2"/>
-      <text x="500" y="589" text-anchor="middle" class="ano" fill="#F4C26B">2010</text></g>
+  <g class="no" style="animation-delay:1.29s"><rect x="470" y="571" width="60" height="26" rx="13" fill="#0B0D15" stroke="#46CF8D" stroke-width="2"/>
+      <text x="500" y="589" text-anchor="middle" class="ano" fill="#46CF8D">2010</text></g>
 </svg>
