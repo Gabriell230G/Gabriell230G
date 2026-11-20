@@ -3,5 +3,6 @@ const run = (f) => execFileSync(process.execPath, [`.github/scripts/${f}`], { st
 run('generate-header.mjs');
 run('generate-timeline.mjs');
 run('generate-cards.mjs');
+run('generate-extras.mjs');
 try { run('generate-stats.mjs'); }
 catch { console.error('stats pulado (sem token ou sem rede); os SVG antigos foram mantidos'); }

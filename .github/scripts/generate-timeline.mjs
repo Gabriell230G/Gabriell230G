@@ -2,34 +2,15 @@
 // Abre desenhando o trilho e soltando os cartoes; depois um brilho
 // fica descendo pelo trilho.
 import { writeFileSync, mkdirSync } from 'node:fs';
-import { FONT, dark, light, pick, warm, defsGlow, esc, fontFaces, DISPLAY } from './tokens.mjs';
+import { FONT, dark, light, pick, warm, defsGlow, esc, fontFaces, DISPLAY, degrade } from './tokens.mjs';
 import { ITEMS } from './data.mjs';
 
 const W = 1000, RX = 500, CW = 410, CH = 76, ROW = 64, TOP = 34, GAP_RAIL = 44;
 
 // cor por posicao: desce em degrade suave, do laranja avermelhado ao verde,
 // sem voltar atras. O tipo continua no icone e na etiqueta.
-const ESCALA = ['clay', 'peach', 'gold', 'sage'];
-const hex2hsl = (h) => {
-  const [r, g, b] = [1, 3, 5].map((k) => parseInt(h.slice(k, k + 2), 16) / 255);
-  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), l = (mx + mn) / 2, d = mx - mn;
-  if (!d) return [0, 0, l];
-  const s = d / (1 - Math.abs(2 * l - 1));
-  const hh = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4;
-  return [(hh * 60 + 360) % 360, s, l];
-};
-const hsl2hex = ([h, s, l]) => {
-  const f = (n) => { const k = (n + h / 30) % 12, a = s * Math.min(l, 1 - l);
-    return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); };
-  return ('#' + f(0) + f(8) + f(4)).toUpperCase();
-};
 // interpola em HSL para o meio do caminho nao ficar cor de lama
-const corNa = (i, isDark) => {
-  const u = (i / (ITEMS.length - 1)) * (ESCALA.length - 1);
-  const k = Math.min(Math.floor(u), ESCALA.length - 2), f = u - k;
-  const a = hex2hsl(pick(ESCALA[k], isDark)), b = hex2hsl(pick(ESCALA[k + 1], isDark));
-  return hsl2hex(a.map((v, j) => v + (b[j] - v) * f));
-};
+const corNa = (i, isDark) => degrade(i, ITEMS.length, isDark);
 
 const TIPOS = {
   trofeu:   { rot: 'CONQUISTA', cor: 'gold' },

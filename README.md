@@ -17,7 +17,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/sobre-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/sobre-light.svg">
-  <img alt="Sobre mim. Hoje: estagiário de Desenvolvimento e Sustentação de Sistemas no Bradesco e aluno de Sistemas de Informação na FIAP, turma de 2025 a 2028; 20 anos, de São Paulo. No código: Java, front-end, UX/UI e IA aplicada, transformo processo manual, planilha em que ninguém confia e dúvida do dia a dia em ferramenta simples; 1º lugar na Global Solution com a UTOPIA. No tatame: faixa preta de judô, campeão sul-americano e pan-americano, dezesseis anos de tatame; 4º lugar no Mundial de Kata da IJF 2026, em Sarajevo." src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/sobre-dark.svg" width="100%">
+  <img alt="Sobre mim. Hoje: estagiário de Desenvolvimento e Sustentação de Sistemas no Bradesco e aluno de Sistemas de Informação na FIAP, turma de 2025 a 2028; 5 medalhas de reconhecimento de colegas no Bradesco. No código: Java, front-end, UX/UI e IA aplicada, transformo processo manual, planilha em que ninguém confia e dúvida do dia a dia em ferramenta simples; 1º lugar na Global Solution com a UTOPIA. No tatame: faixa preta de judô, campeão pan-americano, sul-americano e brasileiro de kata, dezesseis anos de tatame; 4º lugar no Mundial de Kata da IJF 2026, em Sarajevo." src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/sobre-dark.svg" width="100%">
 </picture>
 
 ---
@@ -69,6 +69,16 @@
 
 ---
 
+### No tatame
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/medalhas-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/medalhas-light.svg">
+  <img alt="Quadro de medalhas no judô, em kata: 4º lugar no Mundial da IJF 2026 em Nage-no-kata, em Sarajevo; campeão pan-americano 2026 em Nage-no-kata e Ju-no-kata; campeão sul-americano 2024 em Nage-no-kata e Ju-no-kata; campeão brasileiro em 2023, 2024 e 2026; 13 medalhas na Copa São Paulo, com 8 ouros; 9 medalhas no Campeonato Paulista, com 6 ouros" src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/medalhas-dark.svg" width="100%">
+</picture>
+
+---
+
 ### Tecnologias
 
 <div align="center">
@@ -77,7 +87,7 @@
 <br>
 <img src="https://skillicons.dev/icons?i=git,github,vscode,idea,figma&theme=dark" alt="Git, GitHub, VS Code, IntelliJ IDEA, Figma">
 
-<sub>Estudando agora: arquitetura de software, APIs REST, cloud e agentes de IA</sub>
+<sub>Estudando agora: desenvolvimento de software, inteligência artificial, automação de processos, Java e front-end</sub>
 
 </div>
 
@@ -90,7 +100,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-light.svg">
-  <img alt="Trajetória: 2026, Tami na Global Solution CitizenTech; 2026, 4º lugar no Mundial de Kata da IJF em Sarajevo; 2026, Protege+ no HackGov; 2026, campeão da Global Solution Space Connect com a UTOPIA; 2026, estágio no Bradesco; 2025, entrada na FIAP; 2024, cofundador do Clube das Ciências Econômicas; 2021, ensino médio no Mackenzie com Honra Acadêmica; 2010, primeiro dia no tatame" src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-dark.svg" width="100%">
+  <img alt="Trajetória: 2026, Tami na Global Solution CitizenTech; 2026, 4º lugar no Mundial de Kata da IJF em Nage-no-kata; 2026, Protege+ no HackGov; 2026, campeão da Global Solution Space Connect com a UTOPIA; 2026, campeão pan-americano de kata; 2026, estágio no Bradesco; 2025, entrada na FIAP; 2024, campeão sul-americano de kata; 2024, cofundador do Clube das Ciências Econômicas; 2021, ensino médio no Mackenzie com Honra Acadêmica; 2010, primeiro dia no tatame" src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-dark.svg" width="100%">
 </picture>
 <!-- Header, destaques, projetos, botoes e trajetoria saem de .github/scripts/data.mjs.
      Edite la e rode `node .github/scripts/build.mjs` para regerar os SVG.
@@ -124,17 +134,16 @@
 
 ### Fora do teclado
 
-<img src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/cube.svg" alt="Cubo mágico girando" width="110" align="right">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/hobbies-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/hobbies-light.svg">
+  <img alt="Fora do teclado: judô, faixa preta desde 2010; cinéfilo; cubo mágico; corrida nos fins de semana; Termo, Globle e Seterra todo dia" src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/hobbies-dark.svg" width="100%">
+</picture>
 
-➽ Tatame quatro vezes por semana, e agora ajudando a ensinar os mais novos<br>
-➽ Cubo mágico na mesa, brigando para baixar o tempo a cada tentativa<br>
-➽ Termo e Globle logo cedo, o alongamento de lógica antes de abrir o editor<br>
-➽ Corrida de rua aos sábados, mirando os primeiros 10 km
+<br>
 
-<br clear="right">
-
-<div align="center">
-
-**Disciplina é o que sobra quando a motivação acaba.**
-
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/frases-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/frases-light.svg">
+  <img alt="Frases que me guiam: Se vi mais longe, foi por estar sobre os ombros de gigantes (Isaac Newton). Se estiver difícil de encontrar pessoas boas no mundo, se torne uma. Dê-me seis horas para derrubar uma árvore e passarei as quatro primeiras afiando o machado (atribuída a Abraham Lincoln). Perder faz parte da mensagem. Você não nasceu para ser salvo, você nasceu para salvar outras pessoas." src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/frases-dark.svg" width="100%">
+</picture>

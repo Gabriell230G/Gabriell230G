@@ -96,3 +96,26 @@ export const fontFaces = (...ids) => ids.map((id) => {
 }).join('\n    ');
 export const DISPLAY = `"Brico", ${FONT}`;
 export const MONO = `"JBMono", ui-monospace, "Cascadia Code", Consolas, monospace`;
+
+// degrade quente da paleta: laranja avermelhado ➜ laranja ➜ dourado ➜ verde.
+// Interpola em HSL para o meio do caminho nao ficar cor de lama.
+const hex2hsl = (h) => {
+  const [r, g, b] = [1, 3, 5].map((k) => parseInt(h.slice(k, k + 2), 16) / 255);
+  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), l = (mx + mn) / 2, d = mx - mn;
+  if (!d) return [0, 0, l];
+  const s = d / (1 - Math.abs(2 * l - 1));
+  const hh = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  return [(hh * 60 + 360) % 360, s, l];
+};
+const hsl2hex = ([h, s, l]) => {
+  const f = (n) => { const k = (n + h / 30) % 12, a = s * Math.min(l, 1 - l);
+    return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); };
+  return ('#' + f(0) + f(8) + f(4)).toUpperCase();
+};
+const ESCALA = ['clay', 'peach', 'gold', 'sage'];
+export const degrade = (i, n, isDark) => {
+  const u = n < 2 ? 0 : (i / (n - 1)) * (ESCALA.length - 1);
+  const k = Math.min(Math.floor(u), ESCALA.length - 2), f = u - k;
+  const a = hex2hsl(pick(ESCALA[k], isDark)), b = hex2hsl(pick(ESCALA[k + 1], isDark));
+  return hsl2hex(a.map((v, j) => v + (b[j] - v) * f));
+};

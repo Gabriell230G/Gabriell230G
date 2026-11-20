@@ -25,14 +25,14 @@ export const SOBRE = [
   { icone: 'pasta', rot: 'HOJE', cor: 'peach',
     tit: 'Bradesco e FIAP',
     txt: ['Estagiário de Desenvolvimento e', 'Sustentação de Sistemas no Bradesco', 'e aluno de Sistemas de Informação', 'na FIAP, turma de 2025 a 2028.'],
-    num: '20', sub: 'anos, de São Paulo' },
+    num: '5', sub: 'medalhas de colegas no Bradesco' },
   { icone: 'codigo', rot: 'NO CÓDIGO', cor: 'sage',
     tit: 'Java, front-end, UX/UI e IA',
     txt: ['Transformo processo manual, planilha', 'em que ninguém confia e dúvida do', 'dia a dia em ferramenta simples,', 'que abre em qualquer máquina.'],
     num: '1º', sub: 'na Global Solution, com a UTOPIA' },
   { icone: 'medalha', rot: 'NO TATAME', cor: 'gold',
     tit: 'Faixa preta de judô',
-    txt: ['Campeão sul-americano e', 'pan-americano. Dezesseis anos de', 'tatame me ensinaram a ter calma', 'sob pressão e refazer até dar certo.'],
+    txt: ['Campeão pan-americano, sul-americano', 'e brasileiro de kata. Dezesseis anos', 'de tatame me ensinaram a ter calma', 'e a refazer até dar certo.'],
     num: '4º', sub: 'no Mundial de Kata IJF 2026' },
 ];
 
@@ -85,12 +85,42 @@ export const PROJETOS = [
 // Trajetoria, do mais novo para o mais antigo. tipo: trofeu, projeto, trabalho, estudo, judo
 export const ITEMS = [
   { ano: '2026', tipo: 'projeto', titulo: 'Tami, na GS CitizenTech', desc: 'Agente de saúde que orienta para onde ir' },
-  { ano: '2026', tipo: 'trofeu', titulo: '4º no Mundial de Kata da IJF', desc: 'Sarajevo, Bósnia e Herzegovina' },
+  { ano: '2026', tipo: 'trofeu', titulo: '4º no Mundial de Kata da IJF', desc: 'Nage-no-kata, em Sarajevo' },
   { ano: '2026', tipo: 'projeto', titulo: 'Protege+, no HackGov', desc: 'Denúncias anônimas, em parceria com a EGESP' },
   { ano: '2026', tipo: 'trofeu', titulo: 'Campeão da Global Solution', desc: 'Space Connect, com a UTOPIA' },
+  { ano: '2026', tipo: 'judo', titulo: 'Campeão pan-americano de kata', desc: 'Nage-no-kata e Ju-no-kata' },
   { ano: '2026', tipo: 'trabalho', titulo: 'Estágio no Bradesco', desc: 'Desenvolvimento e Sustentação de Sistemas' },
   { ano: '2025', tipo: 'estudo', titulo: 'Entrada na FIAP', desc: 'Sistemas de Informação, 2025 a 2028' },
+  { ano: '2024', tipo: 'judo', titulo: 'Campeão sul-americano de kata', desc: 'Nage-no-kata e Ju-no-kata' },
   { ano: '2024', tipo: 'estudo', titulo: 'Clube das Ciências Econômicas', desc: 'Cofundador, com visitas à FGV e ao IBMEC' },
   { ano: '2021', tipo: 'estudo', titulo: 'Colégio Mackenzie', desc: 'Ensino médio com Honra Acadêmica' },
   { ano: '2010', tipo: 'judo', titulo: 'Primeiro dia no tatame', desc: 'Associação Alto da Lapa, hoje faixa preta' },
+];
+
+// Quadro de medalhas do judo (kata). m: lista de medalhas o (ouro), p (prata), b (bronze)
+export const MEDALHAS = [
+  { kick: 'MUNDIAL IJF  ·  2026', num: '4º', tit: 'Nage-no-kata', sub: 'Sarajevo, Bósnia e Herzegovina' },
+  { kick: 'PAN-AMERICANO  ·  2026', num: '1º', tit: 'Nage e Ju-no-kata', sub: 'campeão nas duas provas' },
+  { kick: 'SUL-AMERICANO  ·  2024', num: '1º', tit: 'Nage e Ju-no-kata', sub: 'campeão nas duas provas' },
+  { kick: 'BRASILEIRO  ·  2023 A 2026', num: '3×', tit: 'campeão brasileiro', sub: '2023, 2024 e 2026', m: 'oooooob' },
+  { kick: 'COPA SÃO PAULO  ·  2023 A 2026', num: '13', tit: 'medalhas', sub: '8 ouros, 2 pratas, 3 bronzes', m: 'ooooooooppbbb' },
+  { kick: 'PAULISTA  ·  2023 A 2026', num: '9', tit: 'medalhas', sub: '6 ouros e 3 pratas', m: 'ooooooppp' },
+];
+
+// "Fora do teclado"
+export const HOBBIES = [
+  { icone: 'faixa', tit: 'Judô', sub: 'faixa preta, desde 2010' },
+  { icone: 'claquete', tit: 'Cinéfilo', sub: 'vejo filme demais' },
+  { icone: 'cubo', tit: 'Cubo mágico', sub: 'sempre baixando o tempo' },
+  { icone: 'tenis', tit: 'Corrida', sub: 'nos fins de semana' },
+  { icone: 'globo', tit: 'Termo e Globle', sub: 'e Seterra, todo dia' },
+];
+
+// Frases que ficam se revezando no fim do perfil. Quebra de linha manual.
+export const FRASES = [
+  { l: ['Se vi mais longe, foi por estar', 'sobre os ombros de gigantes.'], a: 'Isaac Newton' },
+  { l: ['Se estiver difícil de encontrar pessoas', 'boas no mundo, se torne uma.'] },
+  { l: ['Dê-me seis horas para derrubar uma árvore e', 'passarei as quatro primeiras afiando o machado.'], a: 'atribuída a Abraham Lincoln' },
+  { l: ['Perder faz parte da mensagem.'] },
+  { l: ['Você não nasceu para ser salvo.', 'Você nasceu para salvar outras pessoas.'] },
 ];
