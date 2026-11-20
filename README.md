@@ -90,7 +90,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-light.svg">
-  <img alt="Trajetória: 2026 Tami na Global Solution CitizenTech; 2026 4º lugar no Mundial de Kata da IJF em Sarajevo; 2026 Protege+ no HackGov e no Enterprise Challenge; 2026 campeão da Global Solution Space Connect com a UTOPIA; 2026 estágio no Bradesco; 2025 Sistemas de Informação na FIAP; 2024 cofundador do Clube das Ciências Econômicas; 2021 ensino médio no Mackenzie com Honra Acadêmica; 2010 início no judô, hoje faixa preta" src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-dark.svg" width="100%">
+  <img alt="Trajetória: 2026, Tami na Global Solution CitizenTech; 2026, 4º lugar no Mundial de Kata da IJF em Sarajevo; 2026, Protege+ no HackGov; 2026, campeão da Global Solution Space Connect com a UTOPIA; 2026, estágio no Bradesco; 2025, entrada na FIAP; 2024, cofundador do Clube das Ciências Econômicas; 2021, ensino médio no Mackenzie com Honra Acadêmica; 2010, primeiro dia no tatame" src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/timeline-dark.svg" width="100%">
 </picture>
 <!-- Header, destaques, projetos, botoes e trajetoria saem de .github/scripts/data.mjs.
      Edite la e rode `node .github/scripts/build.mjs` para regerar os SVG.
