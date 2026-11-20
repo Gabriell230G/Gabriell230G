@@ -166,7 +166,7 @@ const ICONES = {
 };
 const BOTOES = [
   { id: 'linkedin', txt: 'LinkedIn', cor: 'peach' },
-  { id: 'email', txt: 'E-mail', cor: 'sand' },
+  { id: 'email', txt: 'E-mail', cor: 'gold' },
   { id: 'repos', txt: 'Repositórios', cor: 'sage' },
 ];
 function botao(b, isDark) {

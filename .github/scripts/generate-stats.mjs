@@ -78,7 +78,7 @@ function build(s, isDark) {
   const cards = [
     s.contribuicoes !== null && { v: s.contribuicoes.toLocaleString('pt-BR'), r: 'contribuições em 12 meses', c: 'peach' },
     s.commits !== null && { v: s.commits.toLocaleString('pt-BR'), r: 'commits no último ano', c: 'sage' },
-    { v: String(s.repos), r: s.repos === 1 ? 'repositório público' : 'repositórios públicos', c: 'sand' },
+    { v: String(s.repos), r: s.repos === 1 ? 'repositório público' : 'repositórios públicos', c: 'gold' },
   ].filter(Boolean);
 
   const W = 1000, CW = Math.floor((W - 60 - 20 * (cards.length - 1)) / cards.length), CH = 128;

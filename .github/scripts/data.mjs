@@ -30,7 +30,7 @@ export const SOBRE = [
     tit: 'Java, front-end, UX/UI e IA',
     txt: ['Transformo processo manual, planilha', 'em que ninguém confia e dúvida do', 'dia a dia em ferramenta simples,', 'que abre em qualquer máquina.'],
     num: '1º', sub: 'na Global Solution, com a UTOPIA' },
-  { icone: 'medalha', rot: 'NO TATAME', cor: 'sand',
+  { icone: 'medalha', rot: 'NO TATAME', cor: 'gold',
     tit: 'Faixa preta de judô',
     txt: ['Campeão sul-americano e', 'pan-americano. Dezesseis anos de', 'tatame me ensinaram a ter calma', 'sob pressão e refazer até dar certo.'],
     num: '4º', sub: 'no Mundial de Kata IJF 2026' },

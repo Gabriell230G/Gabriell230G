@@ -43,6 +43,7 @@ export const accents = {
   sand:   { on: '#E9CDAA', off: '#8C6840' },
   sage:   { on: '#46CF8D', off: '#1C8752' },
   clay:   { on: '#D9826A', off: '#A24B33' },
+  gold:   { on: '#F4C26B', off: '#A8741A' },
 };
 
 export const warm = {

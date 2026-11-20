@@ -19,9 +19,9 @@
       <stop offset=".22" stop-color="#46CF8D" stop-opacity="0.118"/>
       <stop offset=".62" stop-color="#46CF8D" stop-opacity="0"/>
     </linearGradient><linearGradient id="bl2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E9CDAA" stop-opacity="0.28"/>
-      <stop offset=".22" stop-color="#E9CDAA" stop-opacity="0.118"/>
-      <stop offset=".62" stop-color="#E9CDAA" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F4C26B" stop-opacity="0.28"/>
+      <stop offset=".22" stop-color="#F4C26B" stop-opacity="0.118"/>
+      <stop offset=".62" stop-color="#F4C26B" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="barra"><rect x="30" y="198" width="940" height="16" rx="8"/></clipPath>
   </defs>
@@ -46,9 +46,9 @@
     <g>
       <rect x="670" y="30" width="300" height="128" rx="16" fill="#0C0E16"/>
       <rect x="670" y="30" width="300" height="128" rx="16" fill="url(#bl2)"/>
-      <rect x="670" y="30" width="300" height="128" rx="16" fill="none" stroke="#E9CDAA" stroke-opacity="0.34"/>
-      <rect x="670" y="40" width="4" height="108" rx="2" fill="#E9CDAA" filter="url(#gb)"/>
-      <text x="700" y="92" class="num" fill="#E9CDAA">23</text>
+      <rect x="670" y="30" width="300" height="128" rx="16" fill="none" stroke="#F4C26B" stroke-opacity="0.34"/>
+      <rect x="670" y="40" width="4" height="108" rx="2" fill="#F4C26B" filter="url(#gb)"/>
+      <text x="700" y="92" class="num" fill="#F4C26B">23</text>
       <text x="700" y="122" class="rot">repositórios públicos</text>
     </g>
   

@@ -19,8 +19,8 @@
       <stop offset="1" stop-color="#B4583A" stop-opacity="0"/></radialGradient><radialGradient id="ws1" cx=".15" cy="0" r=".9">
       <stop offset="0" stop-color="#1C8752" stop-opacity="0.09"/>
       <stop offset="1" stop-color="#1C8752" stop-opacity="0"/></radialGradient><radialGradient id="ws2" cx=".15" cy="0" r=".9">
-      <stop offset="0" stop-color="#8C6840" stop-opacity="0.09"/>
-      <stop offset="1" stop-color="#8C6840" stop-opacity="0"/></radialGradient></defs>
+      <stop offset="0" stop-color="#A8741A" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#A8741A" stop-opacity="0"/></radialGradient></defs>
   
   <g class="cd" style="animation-delay:0.00s">
     <rect x="30" y="14" width="302.6666666666667" height="286" rx="18" fill="#FFFFFF"/>
@@ -60,20 +60,20 @@
   <g class="cd" style="animation-delay:0.20s">
     <rect x="667.3333333333334" y="14" width="302.6666666666667" height="286" rx="18" fill="#FFFFFF"/>
     <rect x="667.3333333333334" y="14" width="302.6666666666667" height="286" rx="18" fill="url(#ws2)"/>
-    <rect x="667.8333333333334" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#8C6840" stroke-opacity="0.26"/>
-    <rect x="693.3333333333334" y="14" width="56" height="3" rx="1.5" fill="#8C6840" filter="url(#gb)"/>
-    <circle cx="711.3333333333334" cy="60" r="18" fill="#8C6840" fill-opacity="0.1"/>
-    <g transform="translate(0,0)"><path d="M704.3333333333334 49l4 8M718.3333333333334 49l-4 8" stroke="#8C6840" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="711.3333333333334" cy="64" r="7" fill="none" stroke="#8C6840" stroke-width="2.2"/>
-      <circle cx="711.3333333333334" cy="64" r="2.4" fill="#8C6840"/></g>
-    <text x="741.3333333333334" y="65" class="rot" fill="#8C6840">NO TATAME</text>
+    <rect x="667.8333333333334" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#A8741A" stroke-opacity="0.26"/>
+    <rect x="693.3333333333334" y="14" width="56" height="3" rx="1.5" fill="#A8741A" filter="url(#gb)"/>
+    <circle cx="711.3333333333334" cy="60" r="18" fill="#A8741A" fill-opacity="0.1"/>
+    <g transform="translate(0,0)"><path d="M704.3333333333334 49l4 8M718.3333333333334 49l-4 8" stroke="#A8741A" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="711.3333333333334" cy="64" r="7" fill="none" stroke="#A8741A" stroke-width="2.2"/>
+      <circle cx="711.3333333333334" cy="64" r="2.4" fill="#A8741A"/></g>
+    <text x="741.3333333333334" y="65" class="rot" fill="#A8741A">NO TATAME</text>
     <text x="693.3333333333334" y="112" class="tit">Faixa preta de judô</text>
     <text x="693.3333333333334" y="140" class="txt">Campeão sul-americano e</text>
     <text x="693.3333333333334" y="160" class="txt">pan-americano. Dezesseis anos de</text>
     <text x="693.3333333333334" y="180" class="txt">tatame me ensinaram a ter calma</text>
     <text x="693.3333333333334" y="200" class="txt">sob pressão e refazer até dar certo.</text>
     <line x1="693.3333333333334" x2="944" y1="234" y2="234" stroke="#E3E8F2"/>
-    <text x="693.3333333333334" y="278" class="num" fill="#8C6840">4º</text>
+    <text x="693.3333333333334" y="278" class="num" fill="#A8741A">4º</text>
     <text x="742.3333333333334" y="272" class="sub">no Mundial de Kata IJF 2026</text>
   </g>
 </svg>

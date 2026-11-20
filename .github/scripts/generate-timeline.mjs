@@ -8,11 +8,11 @@ import { ITEMS } from './data.mjs';
 const W = 1000, RX = 500, CW = 410, CH = 76, ROW = 64, TOP = 34, GAP_RAIL = 44;
 
 const TIPOS = {
-  trofeu:   { rot: 'CONQUISTA', cor: 'sand' },
+  trofeu:   { rot: 'CONQUISTA', cor: 'gold' },
   projeto:  { rot: 'PROJETO', cor: 'peach' },
   trabalho: { rot: 'TRABALHO', cor: 'clay' },
   estudo:   { rot: 'ESTUDO', cor: 'sage' },
-  judo:     { rot: 'JUDÔ', cor: 'sand' },
+  judo:     { rot: 'JUDÔ', cor: 'gold' },
 };
 
 const ICO = {
