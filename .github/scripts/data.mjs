@@ -97,14 +97,19 @@ export const ITEMS = [
   { ano: '2010', tipo: 'judo', titulo: 'Primeiro dia no tatame', desc: 'Associação Alto da Lapa, hoje faixa preta' },
 ];
 
-// Quadro de medalhas do judo (kata). m: lista de medalhas o (ouro), p (prata), b (bronze)
-export const MEDALHAS = [
-  { kick: 'MUNDIAL IJF  ·  2026', num: '4º', tit: 'Nage-no-kata', sub: 'Sarajevo, Bósnia e Herzegovina' },
-  { kick: 'PAN-AMERICANO  ·  2026', num: '1º', tit: 'Nage e Ju-no-kata', sub: 'campeão nas duas provas' },
-  { kick: 'SUL-AMERICANO  ·  2024', num: '1º', tit: 'Nage e Ju-no-kata', sub: 'campeão nas duas provas' },
-  { kick: 'BRASILEIRO  ·  2023 A 2026', num: '3×', tit: 'campeão brasileiro', sub: '2023, 2024 e 2026', m: 'oooooob' },
-  { kick: 'COPA SÃO PAULO  ·  2023 A 2026', num: '13', tit: 'medalhas', sub: '8 ouros, 2 pratas, 3 bronzes', m: 'ooooooooppbbb' },
-  { kick: 'PAULISTA  ·  2023 A 2026', num: '9', tit: 'medalhas', sub: '6 ouros e 3 pratas', m: 'ooooooppp' },
+// Quadro de medalhas do judo (kata).
+// Linha de cima: os titulos grandes, cada um com um emblema desenhado.
+// emblema: 'brasao' (com asas) ou 'medalha'; fita: cores da fita [clara, escura]
+export const TITULOS = [
+  { emblema: 'brasao', kick: 'MUNDIAL IJF  ·  2026', tit: '4º lugar no mundo', sub: 'Nage-no-kata, em Sarajevo', selo: '4º' },
+  { emblema: 'medalha', kick: 'PAN-AMERICANO  ·  2026', tit: 'Campeão', sub: 'Nage-no-kata e Ju-no-kata', fita: ['#F2A683', '#C8553A'] },
+  { emblema: 'medalha', kick: 'SUL-AMERICANO  ·  2024', tit: 'Campeão', sub: 'Nage-no-kata e Ju-no-kata', fita: ['#5ED69C', '#1F8A57'] },
+];
+// Linha de baixo: contagem de medalhas por competicao [ouro, prata, bronze]
+export const CONTAGEM = [
+  { kick: 'BRASILEIRO  ·  2023 A 2026', tit: '3× campeão brasileiro', m: [5, 0, 1] },
+  { kick: 'COPA SÃO PAULO  ·  2023 A 2026', tit: '13 medalhas', m: [8, 2, 3] },
+  { kick: 'PAULISTA  ·  2023 A 2026', tit: '9 medalhas', m: [6, 3, 0] },
 ];
 
 // "Fora do teclado"

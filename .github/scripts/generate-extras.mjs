@@ -1,7 +1,7 @@
 // Quadro de medalhas, "Fora do teclado" e frases que se revezam.
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { FONT, dark, light, esc, fontFaces, DISPLAY, defsGlow, degrade } from './tokens.mjs';
-import { MEDALHAS, HOBBIES, FRASES } from './data.mjs';
+import { HOBBIES, FRASES } from './data.mjs';
 
 mkdirSync('assets', { recursive: true });
 const temas = [['dark', true], ['light', false]];
@@ -16,50 +16,6 @@ const cardBase = (x, y, w, h, c, t, isDark, id) => `
     <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="url(#${id})"/>
     <rect x="${x + .5}" y="${y + .5}" width="${w - 1}" height="${h - 1}" rx="18" fill="none" stroke="${c}" stroke-opacity="${isDark ? .30 : .28}"/>
     <rect x="${x + 24}" y="${y}" width="48" height="3" rx="1.5" fill="${c}" filter="url(#gb)"/>`;
-
-// ---------------------------------------------------------------- medalhas
-const COR_MED = { o: ['#F4C26B', '#FFE3A3'], p: ['#C3CAD6', '#F1F4F8'], b: ['#C9835A', '#F0B48E'] };
-function medalhas(isDark) {
-  const t = isDark ? dark : light;
-  const W = 1000, gap = 16, CW = (W - 60 - gap * 2) / 3, CH = 138, H = 14 + CH * 2 + gap + 14;
-  const n = MEDALHAS.length;
-  const cards = MEDALHAS.map((m, i) => {
-    const col = i % 3, row = Math.floor(i / 3);
-    const x = 30 + col * (CW + gap), y = 14 + row * (CH + gap), c = degrade(i, n, isDark);
-    const numW = [...m.num].reduce((w, ch) => w + (/[0-9]/.test(ch) ? 31 : 20), 0);
-    const pips = (m.m || '').split('').map((k, j) => {
-      const [base, luz] = COR_MED[k], cx = x + 32 + j * 18, cy = y + CH - 24;
-      return `<g class="pip" style="animation-delay:${(0.6 + i * 0.1 + j * 0.05).toFixed(2)}s">
-        <circle cx="${cx}" cy="${cy}" r="7" fill="${base}"/><circle cx="${cx - 2}" cy="${cy - 2}" r="2.4" fill="${luz}" fill-opacity=".9"/></g>`;
-    }).join('');
-    const yNum = m.m ? y + 86 : y + 98;
-    return `
-  <g class="cd" style="animation-delay:${(i * 0.09).toFixed(2)}s">${cardBase(x, y, CW, CH, c, t, isDark, `w${i}`)}
-    <text x="${x + 24}" y="${y + 36}" class="kick" fill="${c}" xml:space="preserve">${esc(m.kick)}</text>
-    <text x="${x + 22}" y="${yNum}" class="num" fill="${c}">${esc(m.num)}</text>
-    <text x="${x + 34 + numW}" y="${yNum - 22}" class="tit">${esc(m.tit)}</text>
-    <text x="${x + 34 + numW}" y="${yNum - 2}" class="sub">${esc(m.sub)}</text>
-    ${pips}
-  </g>`;
-  }).join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Quadro de medalhas no judô, em kata: ${MEDALHAS.map(m => `${m.kick.replace(/\s+·\s+/, ', ').toLowerCase()}: ${m.num} ${m.tit}, ${m.sub}`).join('; ')}">
-  <style>
-    ${fontFaces('brico-800', 'brico-500')}
-    .kick { font: 700 11px ${FONT}; letter-spacing:1.8px }
-    .num  { font: 800 52px ${DISPLAY}; letter-spacing:-1.5px }
-    .tit  { font: 500 17px ${DISPLAY}; fill:${t.text} }
-    .sub  { font: 400 13px ${FONT}; fill:${t.muted} }
-    ${ENTRA}
-    .pip { opacity:0; transform-box: fill-box; transform-origin:center; animation: pop .4s cubic-bezier(.3,1.7,.5,1) forwards }
-    @keyframes pop { from{opacity:0;transform:scale(.2)} to{opacity:1;transform:none} }
-    @media (prefers-reduced-motion: reduce){ .cd,.pip{opacity:1;animation:none} }
-  </style>
-  <defs>${defsGlow('gb', 5)}${MEDALHAS.map((m, i) => bleed(`w${i}`, degrade(i, n, isDark), isDark ? .20 : .09)).join('')}</defs>
-  ${cards}
-</svg>
-`;
-}
-for (const [nm, d] of temas) save(`medalhas-${nm}.svg`, medalhas(d));
 
 // ---------------------------------------------------------------- hobbies
 const ICO = {
@@ -120,43 +76,72 @@ function hobbies(isDark) {
 for (const [nm, d] of temas) save(`hobbies-${nm}.svg`, hobbies(d));
 
 // ---------------------------------------------------------------- frases
+// Cartao com barrinhas no estilo "stories": cada frase fica 6 s e a barra
+// dela vai enchendo; contador 01/05 no canto e aspas grandes de marca d'agua.
 function frases(isDark) {
   const t = isDark ? dark : light;
-  const W = 1000, H = 190, n = FRASES.length, SLOT = 6, TOTAL = SLOT * n;
-  const pct = (s) => ((s / TOTAL) * 100).toFixed(2) + '%';
-  const blocos = FRASES.map((f, i) => {
-    const c = degrade(i, n, isDark);
-    const linhas = f.l.length, y0 = 92 - (linhas - 1) * 15;
-    return `<g class="fr" style="animation-delay:${(i * SLOT - 0.4).toFixed(1)}s">
-      ${f.l.map((l, k) => `<text x="${W / 2}" y="${y0 + k * 30}" text-anchor="middle" class="q">${esc(l)}</text>`).join('')}
-      ${f.a ? `<text x="${W / 2}" y="${y0 + linhas * 30 + 8}" text-anchor="middle" class="a" fill="${c}">${esc(f.a)}</text>` : ''}
-    </g>`;
-  }).join('\n  ');
-  const dots = FRASES.map((f, i) => `<circle class="dt" cx="${W / 2 - (n - 1) * 9 + i * 18}" cy="${H - 24}" r="3.5" fill="${degrade(i, n, isDark)}" style="animation-delay:${(i * SLOT - 0.4).toFixed(1)}s"/>`).join('');
+  const W = 1000, H = 250, n = FRASES.length, SLOT = 6, TOTAL = SLOT * n;
+  const X0 = 30, Y0 = 12, CWD = W - 60, CHT = H - 24;
+  const P = (s) => ((s / TOTAL) * 100).toFixed(3) + '%';
+  const kf = [], blocos = [], barras = [], conts = [];
+  const BX = 76, BW = W - 152, BG = 8, SW = (BW - BG * (n - 1)) / n, BY = Y0 + CHT - 28;
+  FRASES.forEach((f, i) => {
+    const c = degrade(i, n, isDark), s0 = i * SLOT, s1 = s0 + SLOT;
+    // texto: entra com leve subida, sai subindo
+    kf.push(`@keyframes f${i} { 0%{opacity:0} ${s0 ? `${P(s0)}{opacity:0;transform:translateY(10px)} ` : ''}${P(s0 + .7)}{opacity:1;transform:none} ${P(s1 - .6)}{opacity:1;transform:none} ${P(s1)}{opacity:0;transform:translateY(-10px)} 100%{opacity:0} }`);
+    kf.push(`@keyframes b${i} { 0%{transform:scaleX(0)} ${s0 ? `${P(s0)}{transform:scaleX(0)} ` : ''}${P(s1)}{transform:scaleX(1)} 99.9%{transform:scaleX(1)} 100%{transform:scaleX(0)} }`);
+    const linhas = f.l.length, y0 = Y0 + 104 - (linhas - 1) * 17;
+    blocos.push(`<g class="fr" style="animation-name:f${i}">
+      ${f.l.map((l, k) => `<text x="${W / 2}" y="${y0 + k * 34}" text-anchor="middle" class="q">${esc(l)}</text>`).join('')}
+      ${f.a ? `<g><rect x="${W / 2 - (f.a.length * 3.6 + 22)}" y="${y0 + linhas * 34 - 8}" width="${f.a.length * 7.2 + 44}" height="26" rx="13" fill="${c}" fill-opacity=".12" stroke="${c}" stroke-opacity=".4"/>
+      <text x="${W / 2}" y="${y0 + linhas * 34 + 9.5}" text-anchor="middle" class="a" fill="${c}">${esc(f.a)}</text></g>` : ''}
+    </g>`);
+    conts.push(`<text x="${X0 + CWD - 46}" y="${Y0 + 46}" text-anchor="end" class="ct fr" style="animation-name:f${i}"><tspan fill="${c}">0${i + 1}</tspan><tspan fill="${t.muted}"> / 0${n}</tspan></text>`);
+    const bx = BX + i * (SW + BG);
+    barras.push(`<rect x="${bx}" y="${BY}" width="${SW}" height="4" rx="2" fill="${t.hair}"/>
+    <rect class="bar" x="${bx}" y="${BY}" width="${SW}" height="4" rx="2" fill="${c}" style="animation-name:b${i}; transform-origin:${bx}px ${BY}px"/>`);
+  });
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Frases que me guiam: ${esc(FRASES.map(f => `“${f.l.join(' ')}”${f.a ? `, ${f.a}` : ''}`).join('; '))}">
   <style>
     ${fontFaces('brico-500', 'brico-800')}
-    .q  { font: 500 23px ${DISPLAY}; fill:${t.text}; letter-spacing:-.3px }
-    .a  { font: 600 13px ${FONT}; letter-spacing:.4px }
-    .aspa { font: 800 120px ${DISPLAY} }
-    .fr { opacity:0; animation: fr ${TOTAL}s ease-in-out infinite }
-    @keyframes fr { 0%{opacity:0;transform:translateY(8px)} ${pct(0.6)}{opacity:1;transform:none} ${pct(SLOT - 0.6)}{opacity:1;transform:none} ${pct(SLOT)}{opacity:0;transform:translateY(-8px)} 100%{opacity:0} }
-    .dt { fill-opacity:.25; animation: dt ${TOTAL}s steps(1) infinite }
-    @keyframes dt { 0%{fill-opacity:1} ${pct(SLOT)}{fill-opacity:.25} }
-    @media (prefers-reduced-motion: reduce){ .fr{animation:none} .fr:first-of-type{opacity:1} .dt{animation:none} }
+    .q  { font: 500 27px ${DISPLAY}; fill:${t.text}; letter-spacing:-.5px }
+    .a  { font: 700 12px ${FONT}; letter-spacing:.6px }
+    .k  { font: 700 11px ${FONT}; letter-spacing:2.2px; fill:${t.muted} }
+    .ct { font: 800 15px ${DISPLAY}; letter-spacing:.5px }
+    .aspa { font: 800 230px ${DISPLAY} }
+    .fr { opacity:0; animation-duration:${TOTAL}s; animation-timing-function:ease-in-out; animation-iteration-count:infinite }
+    .bar { transform: scaleX(0); animation-duration:${TOTAL}s; animation-timing-function:linear; animation-iteration-count:infinite }
+    ${kf.join('\n    ')}
+    .luz { animation: luz 9s ease-in-out infinite alternate }
+    @keyframes luz { from{transform:translateX(-60px)} to{transform:translateX(60px)} }
+    @media (prefers-reduced-motion: reduce){ .fr,.bar,.luz{animation:none} .fr.p0{opacity:1} .bar.p0{transform:none} }
   </style>
   <defs>
-    <linearGradient id="aspa" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${degrade(0, 4, isDark)}"/><stop offset="1" stop-color="${degrade(3, 4, isDark)}"/>
+    <linearGradient id="borda" x1="0" y1="0" x2="1" y2="0">
+      ${[0, 1, 2, 3].map(k => `<stop offset="${k / 3}" stop-color="${degrade(k, 4, isDark)}"/>`).join('')}
     </linearGradient>
-    <radialGradient id="luz" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="${degrade(1, 4, isDark)}" stop-opacity="${isDark ? .16 : .10}"/><stop offset="1" stop-color="${degrade(1, 4, isDark)}" stop-opacity="0"/>
+    <linearGradient id="aspa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="${degrade(0, 4, isDark)}"/><stop offset="1" stop-color="${degrade(2, 4, isDark)}"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="${degrade(1, 4, isDark)}" stop-opacity="${isDark ? .20 : .12}"/><stop offset="1" stop-color="${degrade(1, 4, isDark)}" stop-opacity="0"/>
     </radialGradient>
+    <pattern id="pts" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1" fill="${t.muted}" fill-opacity="${isDark ? .10 : .14}"/></pattern>
+    <clipPath id="card"><rect x="${X0}" y="${Y0}" width="${CWD}" height="${CHT}" rx="26"/></clipPath>
   </defs>
-  <ellipse cx="${W / 2}" cy="${H / 2}" rx="430" ry="110" fill="url(#luz)"/>
-  <text x="${W / 2 - 330}" y="118" class="aspa" fill="url(#aspa)" fill-opacity=".9">“</text>
-  ${blocos}
-  ${dots}
+  <g clip-path="url(#card)">
+    <rect x="${X0}" y="${Y0}" width="${CWD}" height="${CHT}" fill="${t.card}"/>
+    <rect x="${X0}" y="${Y0}" width="${CWD}" height="${CHT}" fill="url(#pts)"/>
+    <ellipse class="luz" cx="${W / 2}" cy="${Y0 + 110}" rx="380" ry="150" fill="url(#glow)"/>
+    <text x="${X0 + 6}" y="${Y0 + 214}" class="aspa" fill="url(#aspa)" fill-opacity="${isDark ? .16 : .14}">“</text>
+    <text x="${X0 + CWD + 4}" y="${Y0 + 290}" text-anchor="end" class="aspa" fill="url(#aspa)" fill-opacity="${isDark ? .10 : .10}">”</text>
+  </g>
+  <rect x="${X0 + .75}" y="${Y0 + .75}" width="${CWD - 1.5}" height="${CHT - 1.5}" rx="26" fill="none" stroke="url(#borda)" stroke-opacity="${isDark ? .55 : .65}" stroke-width="1.5"/>
+  <circle cx="${X0 + 48}" cy="${Y0 + 41}" r="4" fill="${degrade(0, 4, isDark)}"/>
+  <text x="${X0 + 62}" y="${Y0 + 45}" class="k">FRASES QUE ME GUIAM</text>
+  ${conts.map((c, i) => i === 0 ? c.replace('class="ct fr"', 'class="ct fr p0"') : c).join('\n  ')}
+  ${blocos.map((b, i) => i === 0 ? b.replace('class="fr"', 'class="fr p0"') : b).join('\n  ')}
+  ${barras.map((b, i) => i === 0 ? b.replace('class="bar"', 'class="bar p0"') : b).join('\n  ')}
 </svg>
 `;
 }
