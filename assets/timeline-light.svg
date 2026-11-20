@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="706" viewBox="0 0 1000 706" role="img" aria-label="Trajetória: 2026 Bradesco, Estagiário de Desenvolvimento e Sustentação de Sistemas; 2026 Global Solution Space Connect, Campeão com a UTOPIA, plataforma de inteligência urbana; 2026 HackGov e Enterprise Challenge, Protege+, plataforma GovTech de denúncias anônimas com a EGESP; 2025 FIAP, Bacharelado em Sistemas de Informação, 2025 a 2028; 2024 Clube das Ciências Econômicas, Cofundador, mais de 80h de atividades e visitas à FGV e ao IBMEC; 2021 Colégio Presbiteriano Mackenzie, Ensino médio com Honra Acadêmica, entre os cinco melhores alunos; 2010 Judô, Associação Alto da Lapa, Faixa preta, campeão sul-americano e pan-americano">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="890" viewBox="0 0 1000 890" role="img" aria-label="Trajetória: 2026 Global Solution CitizenTech, Tami, agente de saúde que orienta para onde ir, em fase de teste; 2026 Campeonato Mundial de Kata da IJF, 4º lugar em Sarajevo, Bósnia e Herzegovina; 2026 HackGov e Enterprise Challenge, Protege+, plataforma GovTech de denúncias anônimas com a EGESP; 2026 Global Solution Space Connect, Campeão com a UTOPIA, plataforma de inteligência urbana; 2026 Bradesco, Estagiário de Desenvolvimento e Sustentação de Sistemas; 2025 FIAP, Bacharelado em Sistemas de Informação, 2025 a 2028; 2024 Clube das Ciências Econômicas, Cofundador, mais de 80h de atividades e visitas à FGV e ao IBMEC; 2021 Colégio Presbiteriano Mackenzie, Ensino médio com Honra Acadêmica, entre os cinco melhores alunos; 2010 Judô, Associação Alto da Lapa, Faixa preta, campeão sul e pan-americano, 4º no Mundial de Kata">
   <style>
     .ano { font: 800 17px system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; letter-spacing:.2px }
     .tit { font: 700 17px system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill:#080A12 }
@@ -19,66 +19,74 @@
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <linearGradient id="bl0" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D40F35" stop-opacity="0.13"/>
-      <stop offset=".22" stop-color="#D40F35" stop-opacity="0.055"/>
-      <stop offset=".62" stop-color="#D40F35" stop-opacity="0"/>
+      <stop offset="0" stop-color="#1462C4" stop-opacity="0.13"/>
+      <stop offset=".22" stop-color="#1462C4" stop-opacity="0.055"/>
+      <stop offset=".62" stop-color="#1462C4" stop-opacity="0"/>
     </linearGradient><linearGradient id="bl1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5B33D6" stop-opacity="0.13"/>
-      <stop offset=".22" stop-color="#5B33D6" stop-opacity="0.055"/>
-      <stop offset=".62" stop-color="#5B33D6" stop-opacity="0"/>
+      <stop offset="0" stop-color="#B87400" stop-opacity="0.13"/>
+      <stop offset=".22" stop-color="#B87400" stop-opacity="0.055"/>
+      <stop offset=".62" stop-color="#B87400" stop-opacity="0"/>
     </linearGradient><linearGradient id="bl2" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#0E9C92" stop-opacity="0.13"/>
       <stop offset=".22" stop-color="#0E9C92" stop-opacity="0.055"/>
       <stop offset=".62" stop-color="#0E9C92" stop-opacity="0"/>
     </linearGradient><linearGradient id="bl3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B33D6" stop-opacity="0.13"/>
+      <stop offset=".22" stop-color="#5B33D6" stop-opacity="0.055"/>
+      <stop offset=".62" stop-color="#5B33D6" stop-opacity="0"/>
+    </linearGradient><linearGradient id="bl4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D40F35" stop-opacity="0.13"/>
+      <stop offset=".22" stop-color="#D40F35" stop-opacity="0.055"/>
+      <stop offset=".62" stop-color="#D40F35" stop-opacity="0"/>
+    </linearGradient><linearGradient id="bl5" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#D41A6E" stop-opacity="0.13"/>
       <stop offset=".22" stop-color="#D41A6E" stop-opacity="0.055"/>
       <stop offset=".62" stop-color="#D41A6E" stop-opacity="0"/>
-    </linearGradient><linearGradient id="bl4" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B87400" stop-opacity="0.13"/>
-      <stop offset=".22" stop-color="#B87400" stop-opacity="0.055"/>
-      <stop offset=".62" stop-color="#B87400" stop-opacity="0"/>
-    </linearGradient><linearGradient id="bl5" x1="0" y1="0" x2="1" y2="0">
+    </linearGradient><linearGradient id="bl6" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#D6462A" stop-opacity="0.13"/>
       <stop offset=".22" stop-color="#D6462A" stop-opacity="0.055"/>
       <stop offset=".62" stop-color="#D6462A" stop-opacity="0"/>
-    </linearGradient><linearGradient id="bl6" x1="0" y1="0" x2="1" y2="0">
+    </linearGradient><linearGradient id="bl7" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B33D6" stop-opacity="0.13"/>
+      <stop offset=".22" stop-color="#5B33D6" stop-opacity="0.055"/>
+      <stop offset=".62" stop-color="#5B33D6" stop-opacity="0"/>
+    </linearGradient><linearGradient id="bl8" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#0E9B57" stop-opacity="0.13"/>
       <stop offset=".22" stop-color="#0E9B57" stop-opacity="0.055"/>
       <stop offset=".62" stop-color="#0E9B57" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="rail" gradientUnits="userSpaceOnUse" x1="0" y1="77" x2="0" y2="629"><stop offset="0.0%" stop-color="#D40F35"/><stop offset="16.7%" stop-color="#5B33D6"/><stop offset="33.3%" stop-color="#0E9C92"/><stop offset="50.0%" stop-color="#D41A6E"/><stop offset="66.7%" stop-color="#B87400"/><stop offset="83.3%" stop-color="#D6462A"/><stop offset="100.0%" stop-color="#0E9B57"/></linearGradient>
+    <linearGradient id="rail" gradientUnits="userSpaceOnUse" x1="0" y1="77" x2="0" y2="813"><stop offset="0.0%" stop-color="#1462C4"/><stop offset="12.5%" stop-color="#B87400"/><stop offset="25.0%" stop-color="#0E9C92"/><stop offset="37.5%" stop-color="#5B33D6"/><stop offset="50.0%" stop-color="#D40F35"/><stop offset="62.5%" stop-color="#D41A6E"/><stop offset="75.0%" stop-color="#D6462A"/><stop offset="87.5%" stop-color="#5B33D6"/><stop offset="100.0%" stop-color="#0E9B57"/></linearGradient>
   </defs>
-  <rect width="1000" height="706" fill="#FFFFFF" rx="18"/>
-  <rect class="rail" x="114.5" y="77" width="3" height="552" rx="1.5" fill="url(#rail)" filter="url(#gb)"/>
+  <rect width="1000" height="890" fill="#FFFFFF" rx="18"/>
+  <rect class="rail" x="114.5" y="77" width="3" height="736" rx="1.5" fill="url(#rail)" filter="url(#gb)"/>
   
   <g class="row" style="animation-delay:0.00s">
-    <text x="82" y="82" text-anchor="end" class="ano" fill="#D40F35">2026</text>
-    <circle cx="116" cy="77" r="7" fill="#D40F35" filter="url(#gp)"/>
+    <text x="82" y="82" text-anchor="end" class="ano" fill="#1462C4">2026</text>
+    <circle cx="116" cy="77" r="7" fill="#1462C4" filter="url(#gp)"/>
     <circle cx="116" cy="77" r="7" fill="#FFFFFF"/>
-    <circle cx="116" cy="77" r="7" fill="none" stroke="#D40F35" stroke-width="3"/>
+    <circle cx="116" cy="77" r="7" fill="none" stroke="#1462C4" stroke-width="3"/>
 
     <rect x="152" y="40" width="818" height="74" rx="14" fill="#FFFFFF"/>
     <rect x="152" y="40" width="818" height="74" rx="14" fill="url(#bl0)"/>
-    <rect x="152" y="40" width="818" height="74" rx="14" fill="none" stroke="#D40F35" stroke-opacity="0.28"/>
-    <rect x="152" y="48" width="4" height="58" rx="2" fill="#D40F35" filter="url(#gb)"/>
+    <rect x="152" y="40" width="818" height="74" rx="14" fill="none" stroke="#1462C4" stroke-opacity="0.28"/>
+    <rect x="152" y="48" width="4" height="58" rx="2" fill="#1462C4" filter="url(#gb)"/>
 
-    <text x="178" y="72" class="tit">Bradesco</text>
-    <text x="178" y="95" class="des">Estagiário de Desenvolvimento e Sustentação de Sistemas</text>
+    <text x="178" y="72" class="tit">Global Solution CitizenTech</text>
+    <text x="178" y="95" class="des">Tami, agente de saúde que orienta para onde ir, em fase de teste</text>
   </g>
   <g class="row" style="animation-delay:0.08s">
-    <text x="82" y="174" text-anchor="end" class="ano" fill="#5B33D6">2026</text>
-    <circle cx="116" cy="169" r="7" fill="#5B33D6" filter="url(#gp)"/>
+    <text x="82" y="174" text-anchor="end" class="ano" fill="#B87400">2026</text>
+    <circle cx="116" cy="169" r="7" fill="#B87400" filter="url(#gp)"/>
     <circle cx="116" cy="169" r="7" fill="#FFFFFF"/>
-    <circle cx="116" cy="169" r="7" fill="none" stroke="#5B33D6" stroke-width="3"/>
+    <circle cx="116" cy="169" r="7" fill="none" stroke="#B87400" stroke-width="3"/>
 
     <rect x="152" y="132" width="818" height="74" rx="14" fill="#FFFFFF"/>
     <rect x="152" y="132" width="818" height="74" rx="14" fill="url(#bl1)"/>
-    <rect x="152" y="132" width="818" height="74" rx="14" fill="none" stroke="#5B33D6" stroke-opacity="0.28"/>
-    <rect x="152" y="140" width="4" height="58" rx="2" fill="#5B33D6" filter="url(#gb)"/>
+    <rect x="152" y="132" width="818" height="74" rx="14" fill="none" stroke="#B87400" stroke-opacity="0.28"/>
+    <rect x="152" y="140" width="4" height="58" rx="2" fill="#B87400" filter="url(#gb)"/>
 
-    <text x="178" y="164" class="tit">Global Solution Space Connect</text>
-    <text x="178" y="187" class="des">Campeão com a UTOPIA, plataforma de inteligência urbana</text>
+    <text x="178" y="164" class="tit">Campeonato Mundial de Kata da IJF</text>
+    <text x="178" y="187" class="des">4º lugar em Sarajevo, Bósnia e Herzegovina</text>
   </g>
   <g class="row" style="animation-delay:0.16s">
     <text x="82" y="266" text-anchor="end" class="ano" fill="#0E9C92">2026</text>
@@ -95,59 +103,87 @@
     <text x="178" y="279" class="des">Protege+, plataforma GovTech de denúncias anônimas com a EGESP</text>
   </g>
   <g class="row" style="animation-delay:0.24s">
-    <text x="82" y="358" text-anchor="end" class="ano" fill="#D41A6E">2025</text>
-    <circle cx="116" cy="353" r="7" fill="#D41A6E" filter="url(#gp)"/>
+    <text x="82" y="358" text-anchor="end" class="ano" fill="#5B33D6">2026</text>
+    <circle cx="116" cy="353" r="7" fill="#5B33D6" filter="url(#gp)"/>
     <circle cx="116" cy="353" r="7" fill="#FFFFFF"/>
-    <circle cx="116" cy="353" r="7" fill="none" stroke="#D41A6E" stroke-width="3"/>
+    <circle cx="116" cy="353" r="7" fill="none" stroke="#5B33D6" stroke-width="3"/>
 
     <rect x="152" y="316" width="818" height="74" rx="14" fill="#FFFFFF"/>
     <rect x="152" y="316" width="818" height="74" rx="14" fill="url(#bl3)"/>
-    <rect x="152" y="316" width="818" height="74" rx="14" fill="none" stroke="#D41A6E" stroke-opacity="0.28"/>
-    <rect x="152" y="324" width="4" height="58" rx="2" fill="#D41A6E" filter="url(#gb)"/>
+    <rect x="152" y="316" width="818" height="74" rx="14" fill="none" stroke="#5B33D6" stroke-opacity="0.28"/>
+    <rect x="152" y="324" width="4" height="58" rx="2" fill="#5B33D6" filter="url(#gb)"/>
 
-    <text x="178" y="348" class="tit">FIAP</text>
-    <text x="178" y="371" class="des">Bacharelado em Sistemas de Informação, 2025 a 2028</text>
+    <text x="178" y="348" class="tit">Global Solution Space Connect</text>
+    <text x="178" y="371" class="des">Campeão com a UTOPIA, plataforma de inteligência urbana</text>
   </g>
   <g class="row" style="animation-delay:0.32s">
-    <text x="82" y="450" text-anchor="end" class="ano" fill="#B87400">2024</text>
-    <circle cx="116" cy="445" r="7" fill="#B87400" filter="url(#gp)"/>
+    <text x="82" y="450" text-anchor="end" class="ano" fill="#D40F35">2026</text>
+    <circle cx="116" cy="445" r="7" fill="#D40F35" filter="url(#gp)"/>
     <circle cx="116" cy="445" r="7" fill="#FFFFFF"/>
-    <circle cx="116" cy="445" r="7" fill="none" stroke="#B87400" stroke-width="3"/>
+    <circle cx="116" cy="445" r="7" fill="none" stroke="#D40F35" stroke-width="3"/>
 
     <rect x="152" y="408" width="818" height="74" rx="14" fill="#FFFFFF"/>
     <rect x="152" y="408" width="818" height="74" rx="14" fill="url(#bl4)"/>
-    <rect x="152" y="408" width="818" height="74" rx="14" fill="none" stroke="#B87400" stroke-opacity="0.28"/>
-    <rect x="152" y="416" width="4" height="58" rx="2" fill="#B87400" filter="url(#gb)"/>
+    <rect x="152" y="408" width="818" height="74" rx="14" fill="none" stroke="#D40F35" stroke-opacity="0.28"/>
+    <rect x="152" y="416" width="4" height="58" rx="2" fill="#D40F35" filter="url(#gb)"/>
 
-    <text x="178" y="440" class="tit">Clube das Ciências Econômicas</text>
-    <text x="178" y="463" class="des">Cofundador, mais de 80h de atividades e visitas à FGV e ao IBMEC</text>
+    <text x="178" y="440" class="tit">Bradesco</text>
+    <text x="178" y="463" class="des">Estagiário de Desenvolvimento e Sustentação de Sistemas</text>
   </g>
   <g class="row" style="animation-delay:0.40s">
-    <text x="82" y="542" text-anchor="end" class="ano" fill="#D6462A">2021</text>
-    <circle cx="116" cy="537" r="7" fill="#D6462A" filter="url(#gp)"/>
+    <text x="82" y="542" text-anchor="end" class="ano" fill="#D41A6E">2025</text>
+    <circle cx="116" cy="537" r="7" fill="#D41A6E" filter="url(#gp)"/>
     <circle cx="116" cy="537" r="7" fill="#FFFFFF"/>
-    <circle cx="116" cy="537" r="7" fill="none" stroke="#D6462A" stroke-width="3"/>
+    <circle cx="116" cy="537" r="7" fill="none" stroke="#D41A6E" stroke-width="3"/>
 
     <rect x="152" y="500" width="818" height="74" rx="14" fill="#FFFFFF"/>
     <rect x="152" y="500" width="818" height="74" rx="14" fill="url(#bl5)"/>
-    <rect x="152" y="500" width="818" height="74" rx="14" fill="none" stroke="#D6462A" stroke-opacity="0.28"/>
-    <rect x="152" y="508" width="4" height="58" rx="2" fill="#D6462A" filter="url(#gb)"/>
+    <rect x="152" y="500" width="818" height="74" rx="14" fill="none" stroke="#D41A6E" stroke-opacity="0.28"/>
+    <rect x="152" y="508" width="4" height="58" rx="2" fill="#D41A6E" filter="url(#gb)"/>
 
-    <text x="178" y="532" class="tit">Colégio Presbiteriano Mackenzie</text>
-    <text x="178" y="555" class="des">Ensino médio com Honra Acadêmica, entre os cinco melhores alunos</text>
+    <text x="178" y="532" class="tit">FIAP</text>
+    <text x="178" y="555" class="des">Bacharelado em Sistemas de Informação, 2025 a 2028</text>
   </g>
   <g class="row" style="animation-delay:0.48s">
-    <text x="82" y="634" text-anchor="end" class="ano" fill="#0E9B57">2010</text>
-    <circle cx="116" cy="629" r="7" fill="#0E9B57" filter="url(#gp)"/>
+    <text x="82" y="634" text-anchor="end" class="ano" fill="#D6462A">2024</text>
+    <circle cx="116" cy="629" r="7" fill="#D6462A" filter="url(#gp)"/>
     <circle cx="116" cy="629" r="7" fill="#FFFFFF"/>
-    <circle cx="116" cy="629" r="7" fill="none" stroke="#0E9B57" stroke-width="3"/>
+    <circle cx="116" cy="629" r="7" fill="none" stroke="#D6462A" stroke-width="3"/>
 
     <rect x="152" y="592" width="818" height="74" rx="14" fill="#FFFFFF"/>
     <rect x="152" y="592" width="818" height="74" rx="14" fill="url(#bl6)"/>
-    <rect x="152" y="592" width="818" height="74" rx="14" fill="none" stroke="#0E9B57" stroke-opacity="0.28"/>
-    <rect x="152" y="600" width="4" height="58" rx="2" fill="#0E9B57" filter="url(#gb)"/>
+    <rect x="152" y="592" width="818" height="74" rx="14" fill="none" stroke="#D6462A" stroke-opacity="0.28"/>
+    <rect x="152" y="600" width="4" height="58" rx="2" fill="#D6462A" filter="url(#gb)"/>
 
-    <text x="178" y="624" class="tit">Judô, Associação Alto da Lapa</text>
-    <text x="178" y="647" class="des">Faixa preta, campeão sul-americano e pan-americano</text>
+    <text x="178" y="624" class="tit">Clube das Ciências Econômicas</text>
+    <text x="178" y="647" class="des">Cofundador, mais de 80h de atividades e visitas à FGV e ao IBMEC</text>
+  </g>
+  <g class="row" style="animation-delay:0.56s">
+    <text x="82" y="726" text-anchor="end" class="ano" fill="#5B33D6">2021</text>
+    <circle cx="116" cy="721" r="7" fill="#5B33D6" filter="url(#gp)"/>
+    <circle cx="116" cy="721" r="7" fill="#FFFFFF"/>
+    <circle cx="116" cy="721" r="7" fill="none" stroke="#5B33D6" stroke-width="3"/>
+
+    <rect x="152" y="684" width="818" height="74" rx="14" fill="#FFFFFF"/>
+    <rect x="152" y="684" width="818" height="74" rx="14" fill="url(#bl7)"/>
+    <rect x="152" y="684" width="818" height="74" rx="14" fill="none" stroke="#5B33D6" stroke-opacity="0.28"/>
+    <rect x="152" y="692" width="4" height="58" rx="2" fill="#5B33D6" filter="url(#gb)"/>
+
+    <text x="178" y="716" class="tit">Colégio Presbiteriano Mackenzie</text>
+    <text x="178" y="739" class="des">Ensino médio com Honra Acadêmica, entre os cinco melhores alunos</text>
+  </g>
+  <g class="row" style="animation-delay:0.64s">
+    <text x="82" y="818" text-anchor="end" class="ano" fill="#0E9B57">2010</text>
+    <circle cx="116" cy="813" r="7" fill="#0E9B57" filter="url(#gp)"/>
+    <circle cx="116" cy="813" r="7" fill="#FFFFFF"/>
+    <circle cx="116" cy="813" r="7" fill="none" stroke="#0E9B57" stroke-width="3"/>
+
+    <rect x="152" y="776" width="818" height="74" rx="14" fill="#FFFFFF"/>
+    <rect x="152" y="776" width="818" height="74" rx="14" fill="url(#bl8)"/>
+    <rect x="152" y="776" width="818" height="74" rx="14" fill="none" stroke="#0E9B57" stroke-opacity="0.28"/>
+    <rect x="152" y="784" width="4" height="58" rx="2" fill="#0E9B57" filter="url(#gb)"/>
+
+    <text x="178" y="808" class="tit">Judô, Associação Alto da Lapa</text>
+    <text x="178" y="831" class="des">Faixa preta, campeão sul e pan-americano, 4º no Mundial de Kata</text>
   </g>
 </svg>

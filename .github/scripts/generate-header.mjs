@@ -2,7 +2,7 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 import { FONT, dark, accents, defsGlow, defsWash, esc } from './tokens.mjs';
 import { PERFIL } from './data.mjs';
 
-const W = 1000, H = 238, t = dark;
+const W = 1000, H = 262, t = dark;
 const A = accents;
 const chipCores = [A.violet.on, A.pink.on, A.cyan.on, A.amber.on];
 
@@ -12,10 +12,10 @@ const chipEls = chips.map((c) => {
   const w = 40 + c.texto.length * 7.9;   // 25 de recuo + texto + 15 de respiro
   const el = `
     <g>
-      <rect x="${x}" y="172" width="${w}" height="32" rx="16" fill="${c.cor}" fill-opacity=".10"/>
-      <rect x="${x}" y="172" width="${w}" height="32" rx="16" fill="none" stroke="${c.cor}" stroke-opacity=".42"/>
-      <circle cx="${x + 15}" cy="188" r="3.4" fill="${c.cor}" filter="url(#gDot)"/>
-      <text x="${x + 25}" y="193" class="chip" fill="${c.cor}">${esc(c.texto)}</text>
+      <rect x="${x}" y="198" width="${w}" height="32" rx="16" fill="${c.cor}" fill-opacity=".10"/>
+      <rect x="${x}" y="198" width="${w}" height="32" rx="16" fill="none" stroke="${c.cor}" stroke-opacity=".42"/>
+      <circle cx="${x + 15}" cy="214" r="3.4" fill="${c.cor}" filter="url(#gDot)"/>
+      <text x="${x + 25}" y="219" class="chip" fill="${c.cor}">${esc(c.texto)}</text>
     </g>`;
   x += w + 12;
   return el;
@@ -24,12 +24,15 @@ const chipEls = chips.map((c) => {
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(PERFIL.nome)}, ${esc(PERFIL.cargo)} · ${esc(PERFIL.empresa)}">
   <style>
     .nome { font: 800 52px ${FONT}; fill:${t.text}; letter-spacing:-1.4px }
-    .cargo{ font: 500 18px ${FONT}; fill:${t.body} }
+    .cargo{ font: 600 18px ${FONT}; fill:${t.body} }
+    .linha{ font: 500 15px ${FONT}; fill:${t.muted} }
+    .pisca{ animation: p 1.1s steps(1) infinite }
+    @keyframes p { 50% { opacity:0 } }
     .marca{ font: 700 13px ${FONT}; fill:${A.red.on}; letter-spacing:3.4px }
     .chip { font: 600 13px ${FONT} }
     .drift{ animation: d 18s ease-in-out infinite alternate }
     @keyframes d { from { transform: translate(-26px,6px) } to { transform: translate(34px,-8px) } }
-    @media (prefers-reduced-motion: reduce){ .drift{ animation:none } }
+    @media (prefers-reduced-motion: reduce){ .drift,.pisca{ animation:none } }
   </style>
   <defs>
     ${defsGlow('gBig', 26)}
@@ -69,11 +72,12 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
     <rect width="${W}" height="${H}" fill="url(#fade)"/>
 
     <!-- barra viva a esquerda -->
-    <rect x="30" y="52" width="5" height="128" rx="2.5" fill="url(#fio)" filter="url(#gLine)"/>
+    <rect x="30" y="50" width="5" height="182" rx="2.5" fill="url(#fio)" filter="url(#gLine)"/>
 
-    <text x="60" y="72" class="marca">BRADESCO  ·  FIAP</text>
-    <text x="58" y="126" class="nome">${esc(PERFIL.nome)}</text>
-    <text x="60" y="154" class="cargo">${esc(PERFIL.cargo)}</text>
+    <text x="60" y="68" class="marca" xml:space="preserve">${esc(PERFIL.marca)}</text>
+    <text x="58" y="122" class="nome">${esc(PERFIL.nome)}<tspan class="pisca" fill="${A.violet.on}">_</tspan></text>
+    <text x="60" y="152" class="cargo" xml:space="preserve">${esc(PERFIL.cargo)}</text>
+    <text x="60" y="178" class="linha" xml:space="preserve">${esc(PERFIL.linha)}</text>
 
     ${chipEls}
 
