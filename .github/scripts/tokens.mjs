@@ -68,3 +68,16 @@ export const defsBleed = (id, color, o = 0.3) =>
 export const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
            .replace(/"/g, '&quot;');
+
+// fontes embutidas (subconjunto latino em assets/fonts) ---------------------
+import { readFileSync } from 'node:fs';
+const FONTES = {
+  'brico-800': ['Brico', 800], 'brico-500': ['Brico', 500], 'mono-400': ['JBMono', 400],
+};
+export const fontFaces = (...ids) => ids.map((id) => {
+  const [fam, w] = FONTES[id];
+  const b64 = readFileSync(`assets/fonts/${id}.woff2`).toString('base64');
+  return `@font-face{font-family:"${fam}";font-weight:${w};src:url(data:font/woff2;base64,${b64}) format("woff2")}`;
+}).join('\n    ');
+export const DISPLAY = `"Brico", ${FONT}`;
+export const MONO = `"JBMono", ui-monospace, "Cascadia Code", Consolas, monospace`;

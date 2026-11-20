@@ -14,16 +14,10 @@
 
 ### Sobre mim
 
-20 anos, São Paulo. Estudo **Sistemas de Informação na FIAP** e sou estagiário de **Desenvolvimento e Sustentação de Sistemas no Bradesco**.
-
-Trabalho melhor em problema que já existe e já incomoda alguém: o processo manual que come meia hora do dia de uma equipe, a planilha em que ninguém confia, a pessoa que não sabe se vai para a UPA ou espera a UBS abrir. Meu forte é **Java, front-end, UX/UI e IA aplicada**, e gosto de entregar coisa leve, que abre em qualquer máquina e continua de pé daqui a dois anos.
-
-No judô sou **faixa preta, campeão sul-americano e pan-americano**, e em 2026 fiquei em **4º lugar no Campeonato Mundial de Kata da IJF**, em Sarajevo. Dezesseis anos de tatame me deram o que mais aparece no meu trabalho: constância quando o resultado demora, cabeça fria sob pressão e disposição de refazer até ficar certo.
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/destaques-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/destaques-light.svg">
-  <img alt="Destaques: 1º lugar na Global Solution Space Connect 2026 com a UTOPIA; 4º lugar no Mundial de Kata da IJF 2026; 16 anos de judô, campeão sul e pan-americano; 3 projetos no ar" src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/destaques-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/sobre-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/sobre-light.svg">
+  <img alt="Sobre mim. Hoje: estagiário de Desenvolvimento e Sustentação de Sistemas no Bradesco e aluno de Sistemas de Informação na FIAP, turma de 2025 a 2028; 20 anos, de São Paulo. No código: Java, front-end, UX/UI e IA aplicada, transformo processo manual, planilha em que ninguém confia e dúvida do dia a dia em ferramenta simples; 1º lugar na Global Solution com a UTOPIA. No tatame: faixa preta de judô, campeão sul-americano e pan-americano, dezesseis anos de tatame; 4º lugar no Mundial de Kata da IJF 2026, em Sarajevo." src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/sobre-dark.svg" width="100%">
 </picture>
 
 ---

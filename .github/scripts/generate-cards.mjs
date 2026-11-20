@@ -1,8 +1,8 @@
 // Destaques, cards de projeto e botoes de contato. Tudo em SVG proprio,
 // versao clara e escura, para o README nao depender de servico externo.
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs';
-import { FONT, dark, light, pick, defsGlow, defsBleed, defsWash, esc } from './tokens.mjs';
-import { DESTAQUES, PROJETOS } from './data.mjs';
+import { FONT, dark, light, pick, defsGlow, defsBleed, defsWash, esc, fontFaces, DISPLAY } from './tokens.mjs';
+import { SOBRE, PROJETOS } from './data.mjs';
 
 mkdirSync('assets', { recursive: true });
 const out = [];
@@ -12,39 +12,56 @@ const temas = [['dark', true], ['light', false]];
 // largura aproximada de texto em fonte de sistema, para pilulas
 const larg = (s, px, peso = 1) => s.length * px * 0.58 * peso;
 
-// ---------------------------------------------------------------- destaques
-function destaques(isDark) {
+// ---------------------------------------------------------------- sobre mim
+const ICO = {
+  pasta: (c, x, y) => `<rect x="${x - 10}" y="${y - 6}" width="20" height="14" rx="3" fill="none" stroke="${c}" stroke-width="2"/>
+      <path d="M${x - 4} ${y - 6}v-3h8v3M${x - 10} ${y}h20" fill="none" stroke="${c}" stroke-width="2" stroke-linejoin="round"/>`,
+  codigo: (c, x, y) => `<path d="M${x - 5} ${y - 6}l-6 6 6 6M${x + 5} ${y - 6}l6 6-6 6M${x + 2} ${y - 8}l-4 16" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
+  medalha: (c, x, y) => `<path d="M${x - 7} ${y - 11}l4 8M${x + 7} ${y - 11}l-4 8" stroke="${c}" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="${x}" cy="${y + 4}" r="7" fill="none" stroke="${c}" stroke-width="2.2"/>
+      <circle cx="${x}" cy="${y + 4}" r="2.4" fill="${c}"/>`,
+};
+function sobre(isDark) {
   const t = isDark ? dark : light;
-  const W = 1000, H = 168, gap = 16, n = DESTAQUES.length;
-  const CW = (W - 60 - gap * (n - 1)) / n, CH = 128, Y = 20;
-  const cards = DESTAQUES.map((d, i) => {
-    const x = 30 + i * (CW + gap), c = pick(d.cor, isDark);
+  const W = 1000, gap = 16, n = SOBRE.length, CW = (W - 60 - gap * (n - 1)) / n, CH = 286, Y = 14, H = CH + 28;
+  const cards = SOBRE.map((d, i) => {
+    const x = 30 + i * (CW + gap), c = pick(d.cor, isDark), px = x + 26;
     return `
-  <g class="cd" style="animation-delay:${(i * 0.09).toFixed(2)}s">
-    <rect x="${x}" y="${Y}" width="${CW}" height="${CH}" rx="16" fill="${t.card}"/>
-    <rect x="${x}" y="${Y}" width="${CW}" height="${CH}" rx="16" fill="url(#bl${i})"/>
-    <rect x="${x}" y="${Y}" width="${CW}" height="${CH}" rx="16" fill="none" stroke="${c}" stroke-opacity="${isDark ? .34 : .26}"/>
-    <rect x="${x}" y="${Y + 10}" width="4" height="${CH - 20}" rx="2" fill="${c}" filter="url(#gb)"/>
-    <text x="${x + 24}" y="${Y + 58}" class="num" fill="${c}">${esc(d.num)}</text>
-    <text x="${x + 24}" y="${Y + 86}" class="tit">${esc(d.tit)}</text>
-    <text x="${x + 24}" y="${Y + 107}" class="des">${esc(d.desc)}</text>
+  <g class="cd" style="animation-delay:${(i * 0.1).toFixed(2)}s">
+    <rect x="${x}" y="${Y}" width="${CW}" height="${CH}" rx="18" fill="${t.card}"/>
+    <rect x="${x}" y="${Y}" width="${CW}" height="${CH}" rx="18" fill="url(#ws${i})"/>
+    <rect x="${x + .5}" y="${Y + .5}" width="${CW - 1}" height="${CH - 1}" rx="18" fill="none" stroke="${c}" stroke-opacity="${isDark ? .30 : .26}"/>
+    <rect x="${x + 26}" y="${Y}" width="56" height="3" rx="1.5" fill="${c}" filter="url(#gb)"/>
+    <circle cx="${px + 18}" cy="${Y + 46}" r="18" fill="${c}" fill-opacity="${isDark ? .14 : .10}"/>
+    <g transform="translate(0,0)">${ICO[d.icone](c, px + 18, Y + 46)}</g>
+    <text x="${px + 48}" y="${Y + 51}" class="rot" fill="${c}">${esc(d.rot)}</text>
+    <text x="${px}" y="${Y + 98}" class="tit">${esc(d.tit)}</text>
+    ${d.txt.map((l, k) => `<text x="${px}" y="${Y + 126 + k * 20}" class="txt">${esc(l)}</text>`).join('\n    ')}
+    <line x1="${px}" x2="${x + CW - 26}" y1="${Y + 220}" y2="${Y + 220}" stroke="${t.hair}"/>
+    <text x="${px}" y="${Y + 264}" class="num" fill="${c}">${esc(d.num)}</text>
+    <text x="${px + [...d.num].reduce((w, ch) => w + (/[0-9]/.test(ch) ? 24 : 13), 0) + 12}" y="${Y + 258}" class="sub">${esc(d.sub)}</text>
   </g>`;
   }).join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Destaques: ${DESTAQUES.map(d => `${d.num} ${d.tit}, ${d.desc}`).join('; ')}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Sobre mim. ${SOBRE.map(d => `${d.rot}: ${d.tit}. ${d.txt.join(' ')} ${d.num} ${d.sub}.`).join(' ')}">
   <style>
-    .num { font: 800 40px ${FONT}; letter-spacing:-1.2px }
-    .tit { font: 700 15px ${FONT}; fill:${t.text} }
-    .des { font: 400 12.5px ${FONT}; fill:${t.muted} }
+    ${fontFaces('brico-800', 'brico-500')}
+    .rot { font: 700 12px ${FONT}; letter-spacing:2.2px }
+    .tit { font: 500 19px ${DISPLAY}; fill:${t.text}; letter-spacing:-.2px }
+    .txt { font: 400 13.5px ${FONT}; fill:${t.body} }
+    .num { font: 800 38px ${DISPLAY}; letter-spacing:-1px }
+    .sub { font: 500 13px ${FONT}; fill:${t.muted} }
     .cd { opacity:0; animation: ent .55s cubic-bezier(.2,.7,.3,1) forwards }
     @keyframes ent { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:none} }
     @media (prefers-reduced-motion: reduce){ .cd{opacity:1;animation:none} }
   </style>
-  <defs>${defsGlow('gb', 5)}${DESTAQUES.map((d, i) => defsBleed(`bl${i}`, pick(d.cor, isDark), isDark ? .28 : .12)).join('')}</defs>
+  <defs>${defsGlow('gb', 5)}${SOBRE.map((d, i) => `<radialGradient id="ws${i}" cx=".15" cy="0" r=".9">
+      <stop offset="0" stop-color="${pick(d.cor, isDark)}" stop-opacity="${isDark ? .22 : .09}"/>
+      <stop offset="1" stop-color="${pick(d.cor, isDark)}" stop-opacity="0"/></radialGradient>`).join('')}</defs>
   ${cards}
 </svg>
 `;
 }
-for (const [n, d] of temas) save(`destaques-${n}.svg`, destaques(d));
+for (const [n, d] of temas) save(`sobre-${n}.svg`, sobre(d));
 
 // ---------------------------------------------------------------- projetos
 function projeto(p, idx, isDark) {
@@ -65,16 +82,17 @@ function projeto(p, idx, isDark) {
     return el;
   }).join('');
 
-  const tituloW = larg(p.titulo, 40, 1.12);
+  const tituloW = larg(p.titulo, 44, 1.0);
   const seloW = p.selo.length * (11 * 0.66 + 1.6) + 34;
   const seloX = 44 + tituloW + 18;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(p.titulo)}: ${esc(p.tagline)}. ${esc(p.desc.join(' '))} Tecnologias: ${esc(p.tags.join(', '))}">
   <style>
+    ${fontFaces('brico-800', 'brico-500')}
     .kick { font: 700 11.5px ${FONT}; fill:${c}; letter-spacing:2.4px }
-    .titulo { font: 800 40px ${FONT}; fill:${t.text}; letter-spacing:-1px }
+    .titulo { font: 800 44px ${DISPLAY}; fill:${t.text}; letter-spacing:-1.4px }
     .selo { font: 800 11px ${FONT}; letter-spacing:1.6px }
-    .tagl { font: 600 17px ${FONT}; fill:${t.text} }
+    .tagl { font: 500 18px ${DISPLAY}; fill:${t.text} }
     .desc { font: 400 14px ${FONT}; fill:${t.body} }
     .tag  { font: 600 12.5px ${FONT}; fill:${t.body} }
     .num  { font: 800 120px ${FONT}; fill:${c}; fill-opacity:${isDark ? .07 : .06}; letter-spacing:-6px }

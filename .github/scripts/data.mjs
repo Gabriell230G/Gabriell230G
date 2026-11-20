@@ -1,18 +1,39 @@
 // Fonte unica do perfil. Edite aqui e rode `node .github/scripts/build.mjs`.
 export const PERFIL = {
   nome: 'Gabriel Vasconcellos Gomes',
-  marca: 'FIAP  ·  BRADESCO  ·  JUDÔ',
-  cargo: 'Desenvolvedor  ·  Sistemas de Informação na FIAP',
-  linha: '20 anos  ·  São Paulo  ·  faixa preta de judô',
-  chips: ['Java', 'Front-end', 'UX/UI', 'IA aplicada'],
+  saudacao: '// olá, eu sou o',
+  nome1: 'Gabriel',
+  nome2: 'Vasconcellos Gomes',
+  tagline: ['Dev que gosta de problema real.', 'Faixa preta que refaz até ficar certo.'],
+  // cada linha do "editor" do header: [texto, cor]. Cores: k (palavra-chave),
+  // v (variavel), p (propriedade), s (texto), n (numero), f (funcao), x (pontuacao)
+  codigo: [
+    [['const ', 'k'], ['gabriel', 'v'], [' = {', 'x']],
+    [['  idade', 'p'], [': ', 'x'], ['20', 'n'], [',', 'x']],
+    [['  cidade', 'p'], [': ', 'x'], ['"São Paulo"', 's'], [',', 'x']],
+    [['  estuda', 'p'], [': ', 'x'], ['"SI na FIAP"', 's'], [',', 'x']],
+    [['  trabalha', 'p'], [': ', 'x'], ['"Dev no Bradesco"', 's'], [',', 'x']],
+    [['  stack', 'p'], [': [', 'x'], ['"Java"', 's'], [', ', 'x'], ['"JS"', 's'], [', ', 'x'], ['"UX/UI"', 's'], [', ', 'x'], ['"IA"', 's'], ['],', 'x']],
+    [['  judo', 'p'], [': ', 'x'], ['"faixa preta, 4º Mundial"', 's'], [',', 'x']],
+    [['};', 'x']],
+    [['gabriel', 'v'], ['.', 'x'], ['resolver', 'f'], ['(', 'x'], ['problemaReal', 'v'], [');', 'x']],
+  ],
 };
 
-// Faixa de destaques logo abaixo do "Sobre mim"
-export const DESTAQUES = [
-  { num: '1º', cor: 'violet', tit: 'Global Solution FIAP', desc: 'Campeão com a UTOPIA' },
-  { num: '4º', cor: 'amber', tit: 'Mundial de Kata IJF', desc: 'Sarajevo, 2026' },
-  { num: '16', cor: 'green', tit: 'anos de judô', desc: 'Campeão sul e pan-americano' },
-  { num: '3',  cor: 'cyan', tit: 'projetos no ar', desc: 'Tami, Protege+ e UTOPIA' },
+// "Sobre mim" em tres colunas. Linhas de texto quebradas a mao (~37 caracteres).
+export const SOBRE = [
+  { icone: 'pasta', rot: 'HOJE', cor: 'blue',
+    tit: 'Bradesco e FIAP',
+    txt: ['Estagiário de Desenvolvimento e', 'Sustentação de Sistemas no Bradesco', 'e aluno de Sistemas de Informação', 'na FIAP, turma de 2025 a 2028.'],
+    num: '20', sub: 'anos, de São Paulo' },
+  { icone: 'codigo', rot: 'NO CÓDIGO', cor: 'violet',
+    tit: 'Java, front-end, UX/UI e IA',
+    txt: ['Transformo processo manual, planilha', 'em que ninguém confia e dúvida do', 'dia a dia em ferramenta simples,', 'que abre em qualquer máquina.'],
+    num: '1º', sub: 'na Global Solution, com a UTOPIA' },
+  { icone: 'medalha', rot: 'NO TATAME', cor: 'amber',
+    tit: 'Faixa preta de judô',
+    txt: ['Campeão sul-americano e', 'pan-americano. Dezesseis anos de', 'tatame me ensinaram a ter calma', 'sob pressão e refazer até dar certo.'],
+    num: '4º', sub: 'no Mundial de Kata IJF 2026' },
 ];
 
 // Cards de projeto. `shot` e uma imagem em assets/shots, embutida no SVG.
