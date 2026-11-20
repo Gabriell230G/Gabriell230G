@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="161" height="48" viewBox="0 0 161 48" role="img" aria-label="LinkedIn">
   <style>.t{ font: 700 15px system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill:#080A12 }</style>
   <defs><linearGradient id="bl" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#1462C4" stop-opacity="0.12"/>
-      <stop offset=".22" stop-color="#1462C4" stop-opacity="0.050"/>
-      <stop offset=".62" stop-color="#1462C4" stop-opacity="0"/>
+      <stop offset="0" stop-color="#B4583A" stop-opacity="0.12"/>
+      <stop offset=".22" stop-color="#B4583A" stop-opacity="0.050"/>
+      <stop offset=".62" stop-color="#B4583A" stop-opacity="0"/>
     </linearGradient></defs>
   <rect x=".5" y=".5" width="160" height="47" rx="24" fill="#FFFFFF"/>
   <rect x=".5" y=".5" width="160" height="47" rx="24" fill="url(#bl)"/>
-  <rect x=".5" y=".5" width="160" height="47" rx="24" fill="none" stroke="#1462C4" stroke-opacity="0.4"/>
-  <rect x="18" y="13" width="22" height="22" rx="5" fill="#1462C4"/>
+  <rect x=".5" y=".5" width="160" height="47" rx="24" fill="none" stroke="#B4583A" stroke-opacity="0.4"/>
+  <rect x="18" y="13" width="22" height="22" rx="5" fill="#B4583A"/>
     <rect x="22.5" y="22" width="3.4" height="9" fill="#FFFFFF"/><circle cx="24.2" cy="18.4" r="2" fill="#FFFFFF"/>
     <path d="M28.6 22h3.2v1.3c.6-1 1.7-1.6 3-1.6 2.3 0 3.4 1.4 3.4 4V31h-3.4v-4.7c0-1.2-.4-1.9-1.4-1.9s-1.5.7-1.5 1.9V31h-3.3z" fill="#FFFFFF"/>
   <text x="52" y="29.5" class="t">LinkedIn</text>

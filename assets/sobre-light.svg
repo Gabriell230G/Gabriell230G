@@ -15,65 +15,65 @@
       <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter><radialGradient id="ws0" cx=".15" cy="0" r=".9">
-      <stop offset="0" stop-color="#1462C4" stop-opacity="0.09"/>
-      <stop offset="1" stop-color="#1462C4" stop-opacity="0"/></radialGradient><radialGradient id="ws1" cx=".15" cy="0" r=".9">
-      <stop offset="0" stop-color="#5B33D6" stop-opacity="0.09"/>
-      <stop offset="1" stop-color="#5B33D6" stop-opacity="0"/></radialGradient><radialGradient id="ws2" cx=".15" cy="0" r=".9">
-      <stop offset="0" stop-color="#B87400" stop-opacity="0.09"/>
-      <stop offset="1" stop-color="#B87400" stop-opacity="0"/></radialGradient></defs>
+      <stop offset="0" stop-color="#B4583A" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#B4583A" stop-opacity="0"/></radialGradient><radialGradient id="ws1" cx=".15" cy="0" r=".9">
+      <stop offset="0" stop-color="#1C8752" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#1C8752" stop-opacity="0"/></radialGradient><radialGradient id="ws2" cx=".15" cy="0" r=".9">
+      <stop offset="0" stop-color="#8C6840" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#8C6840" stop-opacity="0"/></radialGradient></defs>
   
   <g class="cd" style="animation-delay:0.00s">
     <rect x="30" y="14" width="302.6666666666667" height="286" rx="18" fill="#FFFFFF"/>
     <rect x="30" y="14" width="302.6666666666667" height="286" rx="18" fill="url(#ws0)"/>
-    <rect x="30.5" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#1462C4" stroke-opacity="0.26"/>
-    <rect x="56" y="14" width="56" height="3" rx="1.5" fill="#1462C4" filter="url(#gb)"/>
-    <circle cx="74" cy="60" r="18" fill="#1462C4" fill-opacity="0.1"/>
-    <g transform="translate(0,0)"><rect x="64" y="54" width="20" height="14" rx="3" fill="none" stroke="#1462C4" stroke-width="2"/>
-      <path d="M70 54v-3h8v3M64 60h20" fill="none" stroke="#1462C4" stroke-width="2" stroke-linejoin="round"/></g>
-    <text x="104" y="65" class="rot" fill="#1462C4">HOJE</text>
+    <rect x="30.5" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#B4583A" stroke-opacity="0.26"/>
+    <rect x="56" y="14" width="56" height="3" rx="1.5" fill="#B4583A" filter="url(#gb)"/>
+    <circle cx="74" cy="60" r="18" fill="#B4583A" fill-opacity="0.1"/>
+    <g transform="translate(0,0)"><rect x="64" y="54" width="20" height="14" rx="3" fill="none" stroke="#B4583A" stroke-width="2"/>
+      <path d="M70 54v-3h8v3M64 60h20" fill="none" stroke="#B4583A" stroke-width="2" stroke-linejoin="round"/></g>
+    <text x="104" y="65" class="rot" fill="#B4583A">HOJE</text>
     <text x="56" y="112" class="tit">Bradesco e FIAP</text>
     <text x="56" y="140" class="txt">Estagiário de Desenvolvimento e</text>
     <text x="56" y="160" class="txt">Sustentação de Sistemas no Bradesco</text>
     <text x="56" y="180" class="txt">e aluno de Sistemas de Informação</text>
     <text x="56" y="200" class="txt">na FIAP, turma de 2025 a 2028.</text>
     <line x1="56" x2="306.6666666666667" y1="234" y2="234" stroke="#E3E8F2"/>
-    <text x="56" y="278" class="num" fill="#1462C4">20</text>
+    <text x="56" y="278" class="num" fill="#B4583A">20</text>
     <text x="116" y="272" class="sub">anos, de São Paulo</text>
   </g>
   <g class="cd" style="animation-delay:0.10s">
     <rect x="348.6666666666667" y="14" width="302.6666666666667" height="286" rx="18" fill="#FFFFFF"/>
     <rect x="348.6666666666667" y="14" width="302.6666666666667" height="286" rx="18" fill="url(#ws1)"/>
-    <rect x="349.1666666666667" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#5B33D6" stroke-opacity="0.26"/>
-    <rect x="374.6666666666667" y="14" width="56" height="3" rx="1.5" fill="#5B33D6" filter="url(#gb)"/>
-    <circle cx="392.6666666666667" cy="60" r="18" fill="#5B33D6" fill-opacity="0.1"/>
-    <g transform="translate(0,0)"><path d="M387.6666666666667 54l-6 6 6 6M397.6666666666667 54l6 6-6 6M394.6666666666667 52l-4 16" fill="none" stroke="#5B33D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
-    <text x="422.6666666666667" y="65" class="rot" fill="#5B33D6">NO CÓDIGO</text>
+    <rect x="349.1666666666667" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#1C8752" stroke-opacity="0.26"/>
+    <rect x="374.6666666666667" y="14" width="56" height="3" rx="1.5" fill="#1C8752" filter="url(#gb)"/>
+    <circle cx="392.6666666666667" cy="60" r="18" fill="#1C8752" fill-opacity="0.1"/>
+    <g transform="translate(0,0)"><path d="M387.6666666666667 54l-6 6 6 6M397.6666666666667 54l6 6-6 6M394.6666666666667 52l-4 16" fill="none" stroke="#1C8752" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text x="422.6666666666667" y="65" class="rot" fill="#1C8752">NO CÓDIGO</text>
     <text x="374.6666666666667" y="112" class="tit">Java, front-end, UX/UI e IA</text>
     <text x="374.6666666666667" y="140" class="txt">Transformo processo manual, planilha</text>
     <text x="374.6666666666667" y="160" class="txt">em que ninguém confia e dúvida do</text>
     <text x="374.6666666666667" y="180" class="txt">dia a dia em ferramenta simples,</text>
     <text x="374.6666666666667" y="200" class="txt">que abre em qualquer máquina.</text>
     <line x1="374.6666666666667" x2="625.3333333333334" y1="234" y2="234" stroke="#E3E8F2"/>
-    <text x="374.6666666666667" y="278" class="num" fill="#5B33D6">1º</text>
+    <text x="374.6666666666667" y="278" class="num" fill="#1C8752">1º</text>
     <text x="423.6666666666667" y="272" class="sub">na Global Solution, com a UTOPIA</text>
   </g>
   <g class="cd" style="animation-delay:0.20s">
     <rect x="667.3333333333334" y="14" width="302.6666666666667" height="286" rx="18" fill="#FFFFFF"/>
     <rect x="667.3333333333334" y="14" width="302.6666666666667" height="286" rx="18" fill="url(#ws2)"/>
-    <rect x="667.8333333333334" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#B87400" stroke-opacity="0.26"/>
-    <rect x="693.3333333333334" y="14" width="56" height="3" rx="1.5" fill="#B87400" filter="url(#gb)"/>
-    <circle cx="711.3333333333334" cy="60" r="18" fill="#B87400" fill-opacity="0.1"/>
-    <g transform="translate(0,0)"><path d="M704.3333333333334 49l4 8M718.3333333333334 49l-4 8" stroke="#B87400" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="711.3333333333334" cy="64" r="7" fill="none" stroke="#B87400" stroke-width="2.2"/>
-      <circle cx="711.3333333333334" cy="64" r="2.4" fill="#B87400"/></g>
-    <text x="741.3333333333334" y="65" class="rot" fill="#B87400">NO TATAME</text>
+    <rect x="667.8333333333334" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#8C6840" stroke-opacity="0.26"/>
+    <rect x="693.3333333333334" y="14" width="56" height="3" rx="1.5" fill="#8C6840" filter="url(#gb)"/>
+    <circle cx="711.3333333333334" cy="60" r="18" fill="#8C6840" fill-opacity="0.1"/>
+    <g transform="translate(0,0)"><path d="M704.3333333333334 49l4 8M718.3333333333334 49l-4 8" stroke="#8C6840" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="711.3333333333334" cy="64" r="7" fill="none" stroke="#8C6840" stroke-width="2.2"/>
+      <circle cx="711.3333333333334" cy="64" r="2.4" fill="#8C6840"/></g>
+    <text x="741.3333333333334" y="65" class="rot" fill="#8C6840">NO TATAME</text>
     <text x="693.3333333333334" y="112" class="tit">Faixa preta de judô</text>
     <text x="693.3333333333334" y="140" class="txt">Campeão sul-americano e</text>
     <text x="693.3333333333334" y="160" class="txt">pan-americano. Dezesseis anos de</text>
     <text x="693.3333333333334" y="180" class="txt">tatame me ensinaram a ter calma</text>
     <text x="693.3333333333334" y="200" class="txt">sob pressão e refazer até dar certo.</text>
     <line x1="693.3333333333334" x2="944" y1="234" y2="234" stroke="#E3E8F2"/>
-    <text x="693.3333333333334" y="278" class="num" fill="#B87400">4º</text>
+    <text x="693.3333333333334" y="278" class="num" fill="#8C6840">4º</text>
     <text x="742.3333333333334" y="272" class="sub">no Mundial de Kata IJF 2026</text>
   </g>
 </svg>

@@ -11,17 +11,17 @@
       <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter><linearGradient id="bl0" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5B33D6" stop-opacity="0.12"/>
-      <stop offset=".22" stop-color="#5B33D6" stop-opacity="0.050"/>
-      <stop offset=".62" stop-color="#5B33D6" stop-opacity="0"/>
+      <stop offset="0" stop-color="#B4583A" stop-opacity="0.12"/>
+      <stop offset=".22" stop-color="#B4583A" stop-opacity="0.050"/>
+      <stop offset=".62" stop-color="#B4583A" stop-opacity="0"/>
     </linearGradient><linearGradient id="bl1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0E9C92" stop-opacity="0.12"/>
-      <stop offset=".22" stop-color="#0E9C92" stop-opacity="0.050"/>
-      <stop offset=".62" stop-color="#0E9C92" stop-opacity="0"/>
+      <stop offset="0" stop-color="#1C8752" stop-opacity="0.12"/>
+      <stop offset=".22" stop-color="#1C8752" stop-opacity="0.050"/>
+      <stop offset=".62" stop-color="#1C8752" stop-opacity="0"/>
     </linearGradient><linearGradient id="bl2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D41A6E" stop-opacity="0.12"/>
-      <stop offset=".22" stop-color="#D41A6E" stop-opacity="0.050"/>
-      <stop offset=".62" stop-color="#D41A6E" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8C6840" stop-opacity="0.12"/>
+      <stop offset=".22" stop-color="#8C6840" stop-opacity="0.050"/>
+      <stop offset=".62" stop-color="#8C6840" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="barra"><rect x="30" y="198" width="940" height="16" rx="8"/></clipPath>
   </defs>
@@ -30,25 +30,25 @@
     <g>
       <rect x="30" y="30" width="300" height="128" rx="16" fill="#FFFFFF"/>
       <rect x="30" y="30" width="300" height="128" rx="16" fill="url(#bl0)"/>
-      <rect x="30" y="30" width="300" height="128" rx="16" fill="none" stroke="#5B33D6" stroke-opacity="0.26"/>
-      <rect x="30" y="40" width="4" height="108" rx="2" fill="#5B33D6" filter="url(#gb)"/>
-      <text x="60" y="92" class="num" fill="#5B33D6">347</text>
+      <rect x="30" y="30" width="300" height="128" rx="16" fill="none" stroke="#B4583A" stroke-opacity="0.26"/>
+      <rect x="30" y="40" width="4" height="108" rx="2" fill="#B4583A" filter="url(#gb)"/>
+      <text x="60" y="92" class="num" fill="#B4583A">347</text>
       <text x="60" y="122" class="rot">contribuições em 12 meses</text>
     </g>
     <g>
       <rect x="350" y="30" width="300" height="128" rx="16" fill="#FFFFFF"/>
       <rect x="350" y="30" width="300" height="128" rx="16" fill="url(#bl1)"/>
-      <rect x="350" y="30" width="300" height="128" rx="16" fill="none" stroke="#0E9C92" stroke-opacity="0.26"/>
-      <rect x="350" y="40" width="4" height="108" rx="2" fill="#0E9C92" filter="url(#gb)"/>
-      <text x="380" y="92" class="num" fill="#0E9C92">325</text>
+      <rect x="350" y="30" width="300" height="128" rx="16" fill="none" stroke="#1C8752" stroke-opacity="0.26"/>
+      <rect x="350" y="40" width="4" height="108" rx="2" fill="#1C8752" filter="url(#gb)"/>
+      <text x="380" y="92" class="num" fill="#1C8752">325</text>
       <text x="380" y="122" class="rot">commits no último ano</text>
     </g>
     <g>
       <rect x="670" y="30" width="300" height="128" rx="16" fill="#FFFFFF"/>
       <rect x="670" y="30" width="300" height="128" rx="16" fill="url(#bl2)"/>
-      <rect x="670" y="30" width="300" height="128" rx="16" fill="none" stroke="#D41A6E" stroke-opacity="0.26"/>
-      <rect x="670" y="40" width="4" height="108" rx="2" fill="#D41A6E" filter="url(#gb)"/>
-      <text x="700" y="92" class="num" fill="#D41A6E">23</text>
+      <rect x="670" y="30" width="300" height="128" rx="16" fill="none" stroke="#8C6840" stroke-opacity="0.26"/>
+      <rect x="670" y="40" width="4" height="108" rx="2" fill="#8C6840" filter="url(#gb)"/>
+      <text x="700" y="92" class="num" fill="#8C6840">23</text>
       <text x="700" y="122" class="rot">repositórios públicos</text>
     </g>
   

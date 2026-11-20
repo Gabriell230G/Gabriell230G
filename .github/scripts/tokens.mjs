@@ -38,6 +38,20 @@ export const accents = {
   coral:  { on: '#FF7A5C', off: '#D6462A' },
   green:  { on: '#2BE38A', off: '#0E9B57' },
   blue:   { on: '#3B9BFF', off: '#1462C4' },
+  // paleta quente tirada da foto de perfil (pele, fundo, camiseta e o ponto verde)
+  peach:  { on: '#F2A683', off: '#B4583A' },
+  sand:   { on: '#E9CDAA', off: '#8C6840' },
+  sage:   { on: '#46CF8D', off: '#1C8752' },
+  clay:   { on: '#D9826A', off: '#A24B33' },
+};
+
+export const warm = {
+  bg:    '#0D0A09',
+  deep:  '#090706',
+  brown: '#5A4034',
+  taupe: '#8C7A6F',
+  text:  '#FBF4EC',
+  body:  '#D9C9B9',
 };
 
 export const pick = (name, isDark) => accents[name][isDark ? 'on' : 'off'];

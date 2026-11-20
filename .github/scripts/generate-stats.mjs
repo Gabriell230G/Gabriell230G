@@ -76,9 +76,9 @@ function build(s, isDark) {
   // Estrelas e seguidores ficam de fora de proposito: sao metricas de
   // popularidade, nao de trabalho, e nao dizem nada sobre quem esta comecando.
   const cards = [
-    s.contribuicoes !== null && { v: s.contribuicoes.toLocaleString('pt-BR'), r: 'contribuições em 12 meses', c: 'violet' },
-    s.commits !== null && { v: s.commits.toLocaleString('pt-BR'), r: 'commits no último ano', c: 'cyan' },
-    { v: String(s.repos), r: s.repos === 1 ? 'repositório público' : 'repositórios públicos', c: 'pink' },
+    s.contribuicoes !== null && { v: s.contribuicoes.toLocaleString('pt-BR'), r: 'contribuições em 12 meses', c: 'peach' },
+    s.commits !== null && { v: s.commits.toLocaleString('pt-BR'), r: 'commits no último ano', c: 'sage' },
+    { v: String(s.repos), r: s.repos === 1 ? 'repositório público' : 'repositórios públicos', c: 'sand' },
   ].filter(Boolean);
 
   const W = 1000, CW = Math.floor((W - 60 - 20 * (cards.length - 1)) / cards.length), CH = 128;

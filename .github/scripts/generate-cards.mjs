@@ -165,9 +165,9 @@ const ICONES = {
     <path d="M26 24.5l-2.6 2.6 2.6 2.6M32 24.5l2.6 2.6-2.6 2.6" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
 };
 const BOTOES = [
-  { id: 'linkedin', txt: 'LinkedIn', cor: 'blue' },
-  { id: 'email', txt: 'E-mail', cor: 'pink' },
-  { id: 'repos', txt: 'Repositórios', cor: 'violet' },
+  { id: 'linkedin', txt: 'LinkedIn', cor: 'peach' },
+  { id: 'email', txt: 'E-mail', cor: 'sand' },
+  { id: 'repos', txt: 'Repositórios', cor: 'sage' },
 ];
 function botao(b, isDark) {
   const t = isDark ? dark : light, c = pick(b.cor, isDark);
