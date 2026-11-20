@@ -12,9 +12,21 @@
     @keyframes entra { from{opacity:0;transform:translateX(var(--dx))} to{opacity:1;transform:none} }
     .no { opacity:0; transform-box: fill-box; transform-origin:center; animation: pop .45s cubic-bezier(.3,1.6,.5,1) forwards }
     @keyframes pop { from{opacity:0;transform:scale(.3)} to{opacity:1;transform:none} }
-    .brilho { opacity:0; animation: desce 4.5s ease-in-out 2.2s infinite }
-    @keyframes desce { 0%{transform:translateY(0);opacity:0} 10%{opacity:1} 90%{opacity:1} 100%{transform:translateY(676px);opacity:0} }
-    @media (prefers-reduced-motion: reduce){ .it,.no{opacity:1;animation:none} .trilho{transform:none;animation:none} .brilho{animation:none} }
+    .brilho { opacity:0; animation: desce 7s linear 1.8s infinite }
+    @keyframes desce { 0%{transform:translateY(0);opacity:0} 4%{opacity:1} 70%{opacity:1;transform:translateY(676px)} 74%,100%{opacity:0;transform:translateY(676px)} }
+    .acende { opacity:0; animation-duration:7s; animation-delay:1.8s; animation-iteration-count:infinite; animation-timing-function:ease-out }
+    @keyframes ac0 { 0%,0.0%{opacity:0} 2.3%{opacity:1} 11.3%,100%{opacity:0} }
+    @keyframes ac1 { 0%,5.9%{opacity:0} 8.9%{opacity:1} 17.9%,100%{opacity:0} }
+    @keyframes ac2 { 0%,12.5%{opacity:0} 15.5%{opacity:1} 24.5%,100%{opacity:0} }
+    @keyframes ac3 { 0%,19.2%{opacity:0} 22.2%{opacity:1} 31.2%,100%{opacity:0} }
+    @keyframes ac4 { 0%,25.8%{opacity:0} 28.8%{opacity:1} 37.8%,100%{opacity:0} }
+    @keyframes ac5 { 0%,32.4%{opacity:0} 35.4%{opacity:1} 44.4%,100%{opacity:0} }
+    @keyframes ac6 { 0%,39.0%{opacity:0} 42.0%{opacity:1} 51.0%,100%{opacity:0} }
+    @keyframes ac7 { 0%,45.7%{opacity:0} 48.7%{opacity:1} 57.7%,100%{opacity:0} }
+    @keyframes ac8 { 0%,52.3%{opacity:0} 55.3%{opacity:1} 64.3%,100%{opacity:0} }
+    @keyframes ac9 { 0%,58.9%{opacity:0} 61.9%{opacity:1} 70.9%,100%{opacity:0} }
+    @keyframes ac10 { 0%,65.6%{opacity:0} 68.6%{opacity:1} 77.6%,100%{opacity:0} }
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){ .it,.no{opacity:1;animation:none} .trilho{transform:none;animation:none} .brilho{animation:none} }
   </style>
   <defs>
     <filter id="gb" x="-70%" y="-70%" width="240%" height="240%">
@@ -39,7 +51,7 @@
   <rect x="498.5" y="50" width="3" height="676" rx="1.5" fill="#1E2333"/>
   <rect class="trilho" x="498.5" y="50" width="3" height="676" rx="1.5" fill="url(#rail)" filter="url(#gb)"/>
   <g class="brilho">
-    <circle cx="500" cy="50" r="14" fill="url(#halo)"/>
+    <circle cx="500" cy="50" r="20" fill="url(#halo)"/>
     <circle cx="500" cy="50" r="3" fill="#FBF4EC"/>
   </g>
   
@@ -48,6 +60,9 @@
     <rect x="50" y="34" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="34" width="410" height="76" rx="16" fill="url(#blD0)"/>
     <rect x="50.5" y="34.5" width="409" height="75" rx="16" fill="none" stroke="#D9826A" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac0">
+      <rect x="50.5" y="34.5" width="409" height="75" rx="16" fill="#D9826A" fill-opacity="0.1" stroke="#D9826A" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="88" cy="72" r="21" fill="#D9826A" fill-opacity="0.13"/>
     <path d="M84 66l-6 6 6 6M92 66l6 6-6 6" fill="none" stroke="#D9826A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="122" y="58" class="tag" fill="#D9826A">PROJETO</text>
@@ -61,6 +76,9 @@
     <rect x="540" y="98" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="540" y="98" width="410" height="76" rx="16" fill="url(#blE1)"/>
     <rect x="540.5" y="98.5" width="409" height="75" rx="16" fill="none" stroke="#E28C70" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac1">
+      <rect x="540.5" y="98.5" width="409" height="75" rx="16" fill="#E28C70" fill-opacity="0.1" stroke="#E28C70" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="578" cy="136" r="21" fill="#E28C70" fill-opacity="0.13"/>
     <path d="M571 128h14v4a7 7 0 0 1-14 0z" fill="#E28C70"/>
       <path d="M571 130h-3.5a3.5 3.5 0 0 0 4 4.5M585 130h3.5a3.5 3.5 0 0 1-4 4.5" fill="none" stroke="#E28C70" stroke-width="1.8"/>
@@ -75,6 +93,9 @@
     <rect x="50" y="162" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="162" width="410" height="76" rx="16" fill="url(#blD2)"/>
     <rect x="50.5" y="162.5" width="409" height="75" rx="16" fill="none" stroke="#E99778" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac2">
+      <rect x="50.5" y="162.5" width="409" height="75" rx="16" fill="#E99778" fill-opacity="0.1" stroke="#E99778" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="88" cy="200" r="21" fill="#E99778" fill-opacity="0.13"/>
     <path d="M84 194l-6 6 6 6M92 194l6 6-6 6" fill="none" stroke="#E99778" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="122" y="186" class="tag" fill="#E99778">PROJETO</text>
@@ -87,6 +108,9 @@
     <rect x="540" y="226" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="540" y="226" width="410" height="76" rx="16" fill="url(#blE3)"/>
     <rect x="540.5" y="226.5" width="409" height="75" rx="16" fill="none" stroke="#F0A280" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac3">
+      <rect x="540.5" y="226.5" width="409" height="75" rx="16" fill="#F0A280" fill-opacity="0.1" stroke="#F0A280" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="578" cy="264" r="21" fill="#F0A280" fill-opacity="0.13"/>
     <path d="M571 256h14v4a7 7 0 0 1-14 0z" fill="#F0A280"/>
       <path d="M571 258h-3.5a3.5 3.5 0 0 0 4 4.5M585 258h3.5a3.5 3.5 0 0 1-4 4.5" fill="none" stroke="#F0A280" stroke-width="1.8"/>
@@ -101,6 +125,9 @@
     <rect x="50" y="290" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="290" width="410" height="76" rx="16" fill="url(#blD4)"/>
     <rect x="50.5" y="290.5" width="409" height="75" rx="16" fill="none" stroke="#F2AA7E" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac4">
+      <rect x="50.5" y="290.5" width="409" height="75" rx="16" fill="#F2AA7E" fill-opacity="0.1" stroke="#F2AA7E" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="88" cy="328" r="21" fill="#F2AA7E" fill-opacity="0.13"/>
     <rect x="78" y="325" width="20" height="5" rx="1.5" fill="#F2AA7E"/>
       <rect x="85" y="323" width="6" height="9" rx="1.5" fill="#F2AA7E"/>
@@ -115,6 +142,9 @@
     <rect x="540" y="354" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="540" y="354" width="410" height="76" rx="16" fill="url(#blE5)"/>
     <rect x="540.5" y="354.5" width="409" height="75" rx="16" fill="none" stroke="#F3B277" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac5">
+      <rect x="540.5" y="354.5" width="409" height="75" rx="16" fill="#F3B277" fill-opacity="0.1" stroke="#F3B277" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="578" cy="392" r="21" fill="#F3B277" fill-opacity="0.13"/>
     <rect x="569" y="387" width="18" height="13" rx="3" fill="none" stroke="#F3B277" stroke-width="2"/>
       <path d="M574.5 387v-3h7v3M569 393h18" fill="none" stroke="#F3B277" stroke-width="2"/>
@@ -128,6 +158,9 @@
     <rect x="50" y="418" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="418" width="410" height="76" rx="16" fill="url(#blD6)"/>
     <rect x="50.5" y="418.5" width="409" height="75" rx="16" fill="none" stroke="#F4BB70" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac6">
+      <rect x="50.5" y="418.5" width="409" height="75" rx="16" fill="#F4BB70" fill-opacity="0.1" stroke="#F4BB70" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="88" cy="456" r="21" fill="#F4BB70" fill-opacity="0.13"/>
     <path d="M88 448l11 5-11 5-11-5z" fill="#F4BB70"/>
       <path d="M82 456v4c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-4" fill="none" stroke="#F4BB70" stroke-width="2"/>
@@ -142,6 +175,9 @@
     <rect x="540" y="482" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="540" y="482" width="410" height="76" rx="16" fill="url(#blE7)"/>
     <rect x="540.5" y="482.5" width="409" height="75" rx="16" fill="none" stroke="#F1D966" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac7">
+      <rect x="540.5" y="482.5" width="409" height="75" rx="16" fill="#F1D966" fill-opacity="0.1" stroke="#F1D966" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="578" cy="520" r="21" fill="#F1D966" fill-opacity="0.13"/>
     <rect x="568" y="517" width="20" height="5" rx="1.5" fill="#F1D966"/>
       <rect x="575" y="515" width="6" height="9" rx="1.5" fill="#F1D966"/>
@@ -157,6 +193,9 @@
     <rect x="50" y="546" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="546" width="410" height="76" rx="16" fill="url(#blD8)"/>
     <rect x="50.5" y="546.5" width="409" height="75" rx="16" fill="none" stroke="#B1E85A" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac8">
+      <rect x="50.5" y="546.5" width="409" height="75" rx="16" fill="#B1E85A" fill-opacity="0.1" stroke="#B1E85A" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="88" cy="584" r="21" fill="#B1E85A" fill-opacity="0.13"/>
     <path d="M88 576l11 5-11 5-11-5z" fill="#B1E85A"/>
       <path d="M82 584v4c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-4" fill="none" stroke="#B1E85A" stroke-width="2"/>
@@ -170,6 +209,9 @@
     <rect x="540" y="610" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="540" y="610" width="410" height="76" rx="16" fill="url(#blE9)"/>
     <rect x="540.5" y="610.5" width="409" height="75" rx="16" fill="none" stroke="#56DC4F" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac9">
+      <rect x="540.5" y="610.5" width="409" height="75" rx="16" fill="#56DC4F" fill-opacity="0.1" stroke="#56DC4F" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="578" cy="648" r="21" fill="#56DC4F" fill-opacity="0.13"/>
     <path d="M578 640l11 5-11 5-11-5z" fill="#56DC4F"/>
       <path d="M572 648v4c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-4" fill="none" stroke="#56DC4F" stroke-width="2"/>
@@ -184,6 +226,9 @@
     <rect x="50" y="674" width="410" height="76" rx="16" fill="#0C0E16"/>
     <rect x="50" y="674" width="410" height="76" rx="16" fill="url(#blD10)"/>
     <rect x="50.5" y="674.5" width="409" height="75" rx="16" fill="none" stroke="#46CF8D" stroke-opacity="0.3"/>
+    <g class="acende" style="animation-name:ac10">
+      <rect x="50.5" y="674.5" width="409" height="75" rx="16" fill="#46CF8D" fill-opacity="0.1" stroke="#46CF8D" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="88" cy="712" r="21" fill="#46CF8D" fill-opacity="0.13"/>
     <rect x="78" y="709" width="20" height="5" rx="1.5" fill="#46CF8D"/>
       <rect x="85" y="707" width="6" height="9" rx="1.5" fill="#46CF8D"/>

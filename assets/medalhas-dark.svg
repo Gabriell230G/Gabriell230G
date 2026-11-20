@@ -10,17 +10,17 @@
     .ql   { font: 500 11.5px system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill:#6C7590 }
     .cd { opacity:0; animation: ent .7s cubic-bezier(.2,.7,.3,1) forwards }
     @keyframes ent { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:none} }
-    .gira { animation: gira 40s linear infinite }
+    .gira { animation: gira 16s linear infinite }
     @keyframes gira { to { transform: rotate(360deg) } }
-    .flut { animation: flut 4.5s ease-in-out infinite alternate }
-    @keyframes flut { from{transform:translateY(2px)} to{transform:translateY(-4px)} }
-    .sweep { animation: sweep 4.8s ease-in-out infinite }
-    @keyframes sweep { 0%,55%{transform:translateX(-120px) rotate(25deg)} 85%,100%{transform:translateX(120px) rotate(25deg)} }
+    .flut { animation: flut 3.2s ease-in-out infinite alternate }
+    @keyframes flut { from{transform:translateY(4px) rotate(-2deg)} to{transform:translateY(-6px) rotate(2deg)} }
+    .sweep { animation: sweep 3.2s ease-in-out infinite }
+    @keyframes sweep { 0%,35%{transform:translateX(-120px) rotate(25deg)} 70%,100%{transform:translateX(120px) rotate(25deg)} }
     .fa { animation: fa 2.8s ease-in-out infinite; opacity:0 }
     @keyframes fa { 0%,100%{opacity:0;transform:scale(.2)} 45%{opacity:1;transform:scale(1)} 70%{opacity:0;transform:scale(.4)} }
     .meri { transform-box: fill-box; transform-origin:center; animation: meri 3.5s linear infinite }
     @keyframes meri { 0%,100%{transform:scaleX(1)} 50%{transform:scaleX(.12)} }
-    @media (prefers-reduced-motion: reduce){ .cd{opacity:1;animation:none} .gira,.flut,.sweep,.meri{animation:none} .fa{opacity:.8;animation:none} }
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){ .cd{opacity:1;animation:none} .gira,.flut,.sweep,.meri{animation:none} .fa{opacity:.8;animation:none} }
   </style>
   <defs>
     <filter id="gb" x="-70%" y="-70%" width="240%" height="240%">
@@ -92,7 +92,7 @@
     <rect x="30" y="14" width="302.6666666666667" height="286" rx="20" fill="url(#gl0)"/>
     <rect x="30.5" y="14.5" width="301.6666666666667" height="285" rx="20" fill="none" stroke="#F2A683" stroke-opacity="0.32"/>
     <g clip-path="url(#cc0)"><g mask="url(#mr)"><path class="gira" style="transform-origin:181.33333333333334px 122px" d="M181.33333333333334 122L311.3 122L310 140.8ZM181.33333333333334 122L303.5 166.5L295.8 183.7ZM181.33333333333334 122L280.9 205.6L267.8 219.1ZM181.33333333333334 122L246.3 234.6L229.3 242.8ZM181.33333333333334 122L203.9 250L185.1 251.9ZM181.33333333333334 122L158.8 250L140.4 245.4ZM181.33333333333334 122L116.3 234.6L100.7 224ZM181.33333333333334 122L81.7 205.6L70.7 190.2ZM181.33333333333334 122L59.2 166.5L54 148.3ZM181.33333333333334 122L51.3 122L52.7 103.2ZM181.33333333333334 122L59.2 77.5L66.9 60.3ZM181.33333333333334 122L81.7 38.4L94.9 24.9ZM181.33333333333334 122L116.3 9.4L133.3 1.2ZM181.33333333333334 122L158.8 -6L177.6 -7.9ZM181.33333333333334 122L203.9 -6L222.2 -1.4ZM181.33333333333334 122L246.3 9.4L262 20ZM181.33333333333334 122L280.9 38.4L292 53.8ZM181.33333333333334 122L303.5 77.5L308.6 95.7Z" fill="#F2A683" fill-opacity="0.16"/></g></g>
-    <g class="flut" style="animation-delay:0.0s">
+    <g class="flut" style="animation-delay:0.0s; transform-origin:181.33333333333334px 82px">
     <defs>
       <linearGradient id="t0cri" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7A27E"/><stop offset=".55" stop-color="#D9604A"/><stop offset="1" stop-color="#8E2F2A"/></linearGradient>
       <linearGradient id="t0ban" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE29A"/><stop offset="1" stop-color="#E0A030"/></linearGradient>
@@ -129,7 +129,7 @@
     <rect x="348.6666666666667" y="14" width="302.6666666666667" height="286" rx="20" fill="url(#gl1)"/>
     <rect x="349.1666666666667" y="14.5" width="301.6666666666667" height="285" rx="20" fill="none" stroke="#F4C26B" stroke-opacity="0.32"/>
     <g clip-path="url(#cc1)"><g mask="url(#mr)"><path class="gira" style="transform-origin:500px 122px" d="M500 122L630 122L628.6 140.8ZM500 122L622.2 166.5L614.4 183.7ZM500 122L599.6 205.6L586.4 219.1ZM500 122L565 234.6L548 242.8ZM500 122L522.6 250L503.8 251.9ZM500 122L477.4 250L459.1 245.4ZM500 122L435 234.6L419.4 224ZM500 122L400.4 205.6L389.4 190.2ZM500 122L377.8 166.5L372.7 148.3ZM500 122L370 122L371.4 103.2ZM500 122L377.8 77.5L385.6 60.3ZM500 122L400.4 38.4L413.6 24.9ZM500 122L435 9.4L452 1.2ZM500 122L477.4 -6L496.2 -7.9ZM500 122L522.6 -6L540.9 -1.4ZM500 122L565 9.4L580.6 20ZM500 122L599.6 38.4L610.6 53.8ZM500 122L622.2 77.5L627.3 95.7Z" fill="#F4C26B" fill-opacity="0.16"/></g></g>
-    <g class="flut" style="animation-delay:0.7s">
+    <g class="flut" style="animation-delay:0.7s; transform-origin:500px 82px">
     <defs>
       <linearGradient id="t1FE" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2A683"/><stop offset="1" stop-color="#C8553A"/></linearGradient>
       <linearGradient id="t1FD" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2A683"/><stop offset="1" stop-color="#C8553A"/></linearGradient>
@@ -159,7 +159,7 @@
     <rect x="667.3333333333334" y="14" width="302.6666666666667" height="286" rx="20" fill="url(#gl2)"/>
     <rect x="667.8333333333334" y="14.5" width="301.6666666666667" height="285" rx="20" fill="none" stroke="#F4C26B" stroke-opacity="0.32"/>
     <g clip-path="url(#cc2)"><g mask="url(#mr)"><path class="gira" style="transform-origin:818.6666666666667px 122px" d="M818.6666666666667 122L948.7 122L947.3 140.8ZM818.6666666666667 122L940.8 166.5L933.1 183.7ZM818.6666666666667 122L918.3 205.6L905.1 219.1ZM818.6666666666667 122L883.7 234.6L866.7 242.8ZM818.6666666666667 122L841.2 250L822.4 251.9ZM818.6666666666667 122L796.1 250L777.8 245.4ZM818.6666666666667 122L753.7 234.6L738 224ZM818.6666666666667 122L719.1 205.6L708 190.2ZM818.6666666666667 122L696.5 166.5L691.4 148.3ZM818.6666666666667 122L688.7 122L690 103.2ZM818.6666666666667 122L696.5 77.5L704.2 60.3ZM818.6666666666667 122L719.1 38.4L732.2 24.9ZM818.6666666666667 122L753.7 9.4L770.7 1.2ZM818.6666666666667 122L796.1 -6L814.9 -7.9ZM818.6666666666667 122L841.2 -6L859.6 -1.4ZM818.6666666666667 122L883.7 9.4L899.3 20ZM818.6666666666667 122L918.3 38.4L929.3 53.8ZM818.6666666666667 122L940.8 77.5L946 95.7Z" fill="#F4C26B" fill-opacity="0.16"/></g></g>
-    <g class="flut" style="animation-delay:1.4s">
+    <g class="flut" style="animation-delay:1.4s; transform-origin:818.6666666666667px 82px">
     <defs>
       <linearGradient id="t2FE" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5ED69C"/><stop offset="1" stop-color="#1F8A57"/></linearGradient>
       <linearGradient id="t2FD" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ED69C"/><stop offset="1" stop-color="#1F8A57"/></linearGradient>

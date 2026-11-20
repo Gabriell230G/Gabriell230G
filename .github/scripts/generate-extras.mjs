@@ -57,9 +57,9 @@ function hobbies(isDark) {
     .tit { font: 500 17px ${DISPLAY}; fill:${t.text} }
     .sub { font: 400 12.5px ${FONT}; fill:${t.muted} }
     ${ENTRA}
-    .gira { animation: gira 6s cubic-bezier(.7,0,.3,1) 1s infinite }
-    @keyframes gira { 0%,70%{transform:rotate(0)} 85%,100%{transform:rotate(120deg)} }
-    .bate { animation: bate 3.2s ease-in-out 1s infinite }
+    .gira { animation: gira 3s cubic-bezier(.7,0,.3,1) 1s infinite }
+    @keyframes gira { 0%,40%{transform:rotate(0)} 60%,100%{transform:rotate(120deg)} }
+    .bate { animation: bate 2.2s ease-in-out 1s infinite }
     @keyframes bate { 0%,80%,100%{transform:rotate(0)} 88%{transform:rotate(-18deg)} }
     .corre { animation: corre .9s ease-in-out infinite alternate }
     @keyframes corre { from{transform:translateY(1.5px)} to{transform:translateY(-1.5px)} }
@@ -67,7 +67,7 @@ function hobbies(isDark) {
     @keyframes vento { from{opacity:.9;transform:translateX(4px)} to{opacity:0;transform:translateX(-6px)} }
     .meri { transform-box: fill-box; transform-origin:center; animation: meri 3s linear infinite }
     @keyframes meri { 0%{transform:scaleX(1)} 50%{transform:scaleX(.15)} 100%{transform:scaleX(1)} }
-    @media (prefers-reduced-motion: reduce){ .cd{opacity:1;animation:none} .gira,.bate,.corre,.vento,.meri{animation:none} }
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){ .cd{opacity:1;animation:none} .gira,.bate,.corre,.vento,.meri{animation:none} }
   </style>
   <defs>${defsGlow('gb', 5)}${HOBBIES.map((h, i) => bleed(`h${i}`, degrade(i, n, isDark), isDark ? .20 : .09)).join('')}</defs>
   ${tiles}
@@ -115,7 +115,7 @@ function frases(isDark) {
     ${kf.join('\n    ')}
     .luz { animation: luz 9s ease-in-out infinite alternate }
     @keyframes luz { from{transform:translateX(-60px)} to{transform:translateX(60px)} }
-    @media (prefers-reduced-motion: reduce){ .fr,.bar,.luz{animation:none} .fr.p0{opacity:1} .bar.p0{transform:none} }
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){ .fr,.bar,.luz{animation:none} .fr.p0{opacity:1} .bar.p0{transform:none} }
   </style>
   <defs>
     <linearGradient id="borda" x1="0" y1="0" x2="1" y2="0">
@@ -176,7 +176,7 @@ function tecnologias(isDark) {
     <rect x="${x}" y="${y}" width="${TW}" height="${TH}" rx="16" fill="${t.card}"/>
     <rect x="${x}" y="${y}" width="${TW}" height="${TH}" rx="16" fill="url(#tg${i})"/>
     <rect x="${x + .5}" y="${y + .5}" width="${TW - 1}" height="${TH - 1}" rx="16" fill="none" stroke="${c}" stroke-opacity="${isDark ? .28 : .30}"/>
-    <path d="${d}" fill="${c}" transform="translate(${ix},${iy}) scale(${S / 24})"/>
+    <g class="onda" style="animation-delay:${(i * 0.25).toFixed(2)}s; transform-origin:${x + TW / 2}px ${iy + S / 2}px"><path d="${d}" fill="${c}" transform="translate(${ix},${iy}) scale(${S / 24})"/></g>
     <text x="${x + TW / 2}" y="${y + 76}" text-anchor="middle" class="nm">${esc(nome)}</text>
   </g>`;
   }).join('\n  ');
@@ -188,8 +188,10 @@ function tecnologias(isDark) {
     .k    { font: 700 11px ${FONT}; letter-spacing:2.2px; fill:${t.muted} }
     ${ENTRA}
     .pul { animation: pul 2.4s ease-in-out infinite }
+    .onda { animation: onda 6s ease-in-out infinite }
+    @keyframes onda { 0%,12%,100%{transform:none} 5%{transform:translateY(-6px) scale(1.2)} }
     @keyframes pul { 0%,100%{opacity:1} 50%{opacity:.35} }
-    @media (prefers-reduced-motion: reduce){ .cd{opacity:1;animation:none} .pul{animation:none} }
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){ .cd{opacity:1;animation:none} .pul{animation:none} }
   </style>
   <defs>${TECNOLOGIAS.map((_, i) => bleed(`tg${i}`, degrade(i, TECNOLOGIAS.length, isDark), isDark ? .16 : .08)).join('')}</defs>
   ${tiles}

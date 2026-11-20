@@ -83,7 +83,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
     @keyframes d2 { from{transform:translate(30px,0)} to{transform:translate(-40px,12px)} }
     .pt   { animation-name: pt; animation-timing-function: linear; animation-iteration-count: infinite }
     @keyframes pt { 0%{transform:translateY(0);opacity:0} 15%{opacity:.9} 85%{opacity:.6} 100%{transform:translateY(-${H + 30}px);opacity:0} }
-    @media (prefers-reduced-motion: reduce){
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){
       .lt,.fade,.ed,.digita{opacity:1;animation:none} .risco{transform:none;animation:none}
       .cur,.vivo,.flut,.drift,.drift2,.pt{animation:none} }
   </style>

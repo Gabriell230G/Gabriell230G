@@ -21,7 +21,7 @@
     @keyframes b4 { 0%{transform:scaleX(0)} 80.000%{transform:scaleX(0)} 100.000%{transform:scaleX(1)} 99.9%{transform:scaleX(1)} 100%{transform:scaleX(0)} }
     .luz { animation: luz 9s ease-in-out infinite alternate }
     @keyframes luz { from{transform:translateX(-60px)} to{transform:translateX(60px)} }
-    @media (prefers-reduced-motion: reduce){ .fr,.bar,.luz{animation:none} .fr.p0{opacity:1} .bar.p0{transform:none} }
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){ .fr,.bar,.luz{animation:none} .fr.p0{opacity:1} .bar.p0{transform:none} }
   </style>
   <defs>
     <linearGradient id="borda" x1="0" y1="0" x2="1" y2="0">

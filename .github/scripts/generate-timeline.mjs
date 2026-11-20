@@ -40,6 +40,7 @@ function build(isDark) {
   const H = TOP + ROW * (ITEMS.length - 1) + CH + 24;
   const railTop = TOP + CH / 2 - GAP_RAIL / 2, railBot = TOP + ROW * (ITEMS.length - 1) + CH / 2 + 14;
   const railLen = railBot - railTop;
+  const ONDA = 7, PF = 70; // a luz desce em 70% do ciclo e descansa no resto
 
   let anoAnterior = null;
   const els = ITEMS.map((it, i) => {
@@ -64,6 +65,9 @@ function build(isDark) {
     <rect x="${x}" y="${y}" width="${CW}" height="${CH}" rx="16" fill="${t.card}"/>
     <rect x="${x}" y="${y}" width="${CW}" height="${CH}" rx="16" fill="url(#bl${esq ? 'D' : 'E'}${i})"/>
     <rect x="${x + .5}" y="${y + .5}" width="${CW - 1}" height="${CH - 1}" rx="16" fill="none" stroke="${c}" stroke-opacity="${isDark ? .30 : .30}"/>
+    <g class="acende" style="animation-name:ac${i}">
+      <rect x="${x + .5}" y="${y + .5}" width="${CW - 1}" height="${CH - 1}" rx="16" fill="${c}" fill-opacity="${isDark ? .10 : .07}" stroke="${c}" stroke-width="1.6" filter="url(#gb)"/>
+    </g>
     <circle cx="${x + 38}" cy="${cy}" r="21" fill="${c}" fill-opacity="${isDark ? .13 : .12}"/>
     ${ICO[it.tipo](c, x + 38, cy)}
     <text x="${x + 72}" y="${y + 24}" class="tag" fill="${c}">${esc(tp.rot)}</text>
@@ -96,9 +100,15 @@ function build(isDark) {
     @keyframes entra { from{opacity:0;transform:translateX(var(--dx))} to{opacity:1;transform:none} }
     .no { opacity:0; transform-box: fill-box; transform-origin:center; animation: pop .45s cubic-bezier(.3,1.6,.5,1) forwards }
     @keyframes pop { from{opacity:0;transform:scale(.3)} to{opacity:1;transform:none} }
-    .brilho { opacity:0; animation: desce 4.5s ease-in-out 2.2s infinite }
-    @keyframes desce { 0%{transform:translateY(0);opacity:0} 10%{opacity:1} 90%{opacity:1} 100%{transform:translateY(${railLen.toFixed(0)}px);opacity:0} }
-    @media (prefers-reduced-motion: reduce){ .it,.no{opacity:1;animation:none} .trilho{transform:none;animation:none} .brilho{animation:none} }
+    .brilho { opacity:0; animation: desce ${ONDA}s linear 1.8s infinite }
+    @keyframes desce { 0%{transform:translateY(0);opacity:0} 4%{opacity:1} ${PF}%{opacity:1;transform:translateY(${railLen.toFixed(0)}px)} ${PF + 4}%,100%{opacity:0;transform:translateY(${railLen.toFixed(0)}px)} }
+    .acende { opacity:0; animation-duration:${ONDA}s; animation-delay:1.8s; animation-iteration-count:infinite; animation-timing-function:ease-out }
+    ${ITEMS.map((_, i) => {
+      const f = ((TOP + ROW * i + CH / 2 - railTop) / railLen) * PF;
+      const a = Math.max(0, f - 3).toFixed(1), b = f.toFixed(1), c2 = Math.min(99, f + 9).toFixed(1);
+      return `@keyframes ac${i} { 0%,${a}%{opacity:0} ${b}%{opacity:1} ${c2}%,100%{opacity:0} }`;
+    }).join('\n    ')}
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){ .it,.no{opacity:1;animation:none} .trilho{transform:none;animation:none} .brilho{animation:none} }
   </style>
   <defs>
     ${defsGlow('gb', 5)}
@@ -109,7 +119,7 @@ function build(isDark) {
   <rect x="${RX - 1.5}" y="${railTop}" width="3" height="${railLen}" rx="1.5" fill="${t.hair}"/>
   <rect class="trilho" x="${RX - 1.5}" y="${railTop}" width="3" height="${railLen}" rx="1.5" fill="url(#rail)" filter="url(#gb)"/>
   <g class="brilho">
-    <circle cx="${RX}" cy="${railTop}" r="14" fill="url(#halo)"/>
+    <circle cx="${RX}" cy="${railTop}" r="20" fill="url(#halo)"/>
     <circle cx="${RX}" cy="${railTop}" r="3" fill="${isDark ? warm.text : '#FFFFFF'}"/>
   </g>
   ${els}

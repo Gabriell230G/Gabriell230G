@@ -116,7 +116,7 @@ function quadro(isDark) {
     <rect x="${x}" y="${y}" width="${CW}" height="${CH1}" rx="20" fill="url(#gl${i})"/>
     <rect x="${x + .5}" y="${y + .5}" width="${CW - 1}" height="${CH1 - 1}" rx="20" fill="none" stroke="${corGlow}" stroke-opacity="${isDark ? .32 : .40}"/>
     <g clip-path="url(#cc${i})">${raios(cx, cy, corGlow, isDark ? .16 : .22)}</g>
-    <g class="flut" style="animation-delay:${(i * 0.7).toFixed(1)}s">${emb}</g>
+    <g class="flut" style="animation-delay:${(i * 0.7).toFixed(1)}s; transform-origin:${cx}px ${cy - 40}px">${emb}</g>
     ${fa}
     <text x="${cx}" y="${y + 214}" text-anchor="middle" class="kick" fill="${isDark ? corGlow : '#A8641C'}" xml:space="preserve">${esc(tt.kick)}</text>
     <text x="${cx}" y="${y + 242}" text-anchor="middle" class="tit">${esc(tt.tit)}</text>
@@ -157,17 +157,17 @@ function quadro(isDark) {
     .ql   { font: 500 11.5px ${FONT}; fill:${t.muted} }
     .cd { opacity:0; animation: ent .7s cubic-bezier(.2,.7,.3,1) forwards }
     @keyframes ent { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:none} }
-    .gira { animation: gira 40s linear infinite }
+    .gira { animation: gira 16s linear infinite }
     @keyframes gira { to { transform: rotate(360deg) } }
-    .flut { animation: flut 4.5s ease-in-out infinite alternate }
-    @keyframes flut { from{transform:translateY(2px)} to{transform:translateY(-4px)} }
-    .sweep { animation: sweep 4.8s ease-in-out infinite }
-    @keyframes sweep { 0%,55%{transform:translateX(-120px) rotate(25deg)} 85%,100%{transform:translateX(120px) rotate(25deg)} }
+    .flut { animation: flut 3.2s ease-in-out infinite alternate }
+    @keyframes flut { from{transform:translateY(4px) rotate(-2deg)} to{transform:translateY(-6px) rotate(2deg)} }
+    .sweep { animation: sweep 3.2s ease-in-out infinite }
+    @keyframes sweep { 0%,35%{transform:translateX(-120px) rotate(25deg)} 70%,100%{transform:translateX(120px) rotate(25deg)} }
     .fa { animation: fa 2.8s ease-in-out infinite; opacity:0 }
     @keyframes fa { 0%,100%{opacity:0;transform:scale(.2)} 45%{opacity:1;transform:scale(1)} 70%{opacity:0;transform:scale(.4)} }
     .meri { transform-box: fill-box; transform-origin:center; animation: meri 3.5s linear infinite }
     @keyframes meri { 0%,100%{transform:scaleX(1)} 50%{transform:scaleX(.12)} }
-    @media (prefers-reduced-motion: reduce){ .cd{opacity:1;animation:none} .gira,.flut,.sweep,.meri{animation:none} .fa{opacity:.8;animation:none} }
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){ .cd{opacity:1;animation:none} .gira,.flut,.sweep,.meri{animation:none} .fa{opacity:.8;animation:none} }
   </style>
   <defs>
     ${defsGlow('gb', 5)}

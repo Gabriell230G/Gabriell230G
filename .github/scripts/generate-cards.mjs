@@ -32,8 +32,10 @@ function sobre(isDark) {
     <rect x="${x}" y="${Y}" width="${CW}" height="${CH}" rx="18" fill="url(#ws${i})"/>
     <rect x="${x + .5}" y="${Y + .5}" width="${CW - 1}" height="${CH - 1}" rx="18" fill="none" stroke="${c}" stroke-opacity="${isDark ? .30 : .26}"/>
     <rect x="${x + 26}" y="${Y}" width="56" height="3" rx="1.5" fill="${c}" filter="url(#gb)"/>
+    <g clip-path="url(#cs${i})"><rect class="varre" style="animation-delay:${(i * 0.5).toFixed(1)}s" x="${x - 120}" y="${Y - 40}" width="70" height="${CH + 80}" fill="url(#luzv)" transform="rotate(18 ${x} ${Y})"/></g>
+    <g class="ico" style="animation-delay:${(i * 0.4).toFixed(1)}s; transform-origin:${px + 18}px ${Y + 46}px">
     <circle cx="${px + 18}" cy="${Y + 46}" r="18" fill="${c}" fill-opacity="${isDark ? .14 : .10}"/>
-    <g transform="translate(0,0)">${ICO[d.icone](c, px + 18, Y + 46)}</g>
+    ${ICO[d.icone](c, px + 18, Y + 46)}</g>
     <text x="${px + 48}" y="${Y + 51}" class="rot" fill="${c}">${esc(d.rot)}</text>
     <text x="${px}" y="${Y + 98}" class="tit">${esc(d.tit)}</text>
     ${d.txt.map((l, k) => `<text x="${px}" y="${Y + 126 + k * 20}" class="txt">${esc(l)}</text>`).join('\n    ')}
@@ -52,9 +54,14 @@ function sobre(isDark) {
     .sub { font: 500 13px ${FONT}; fill:${t.muted} }
     .cd { opacity:0; animation: ent .55s cubic-bezier(.2,.7,.3,1) forwards }
     @keyframes ent { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:none} }
-    @media (prefers-reduced-motion: reduce){ .cd{opacity:1;animation:none} }
+    .varre { animation: varre 5s ease-in-out 1s infinite }
+    @keyframes varre { 0%{transform:translateX(0) rotate(18deg)} 45%,100%{transform:translateX(480px) rotate(18deg)} }
+    .ico { animation: ico 2.6s ease-in-out infinite }
+    @keyframes ico { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-3px) scale(1.12)} }
   </style>
-  <defs>${defsGlow('gb', 5)}${SOBRE.map((d, i) => `<radialGradient id="ws${i}" cx=".15" cy="0" r=".9">
+  <defs>${defsGlow('gb', 5)}
+    <linearGradient id="luzv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity="${isDark ? .07 : .35}"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    ${SOBRE.map((d, i) => `<clipPath id="cs${i}"><rect x="${30 + i * (CW + gap)}" y="${Y}" width="${CW}" height="${CH}" rx="18"/></clipPath>`).join('')}${SOBRE.map((d, i) => `<radialGradient id="ws${i}" cx=".15" cy="0" r=".9">
       <stop offset="0" stop-color="${pick(d.cor, isDark)}" stop-opacity="${isDark ? .22 : .09}"/>
       <stop offset="1" stop-color="${pick(d.cor, isDark)}" stop-opacity="0"/></radialGradient>`).join('')}</defs>
   ${cards}
@@ -97,10 +104,12 @@ function projeto(p, idx, isDark) {
     .tag  { font: 600 12.5px ${FONT}; fill:${t.body} }
     .num  { font: 800 120px ${FONT}; fill:${c}; fill-opacity:${isDark ? .07 : .06}; letter-spacing:-6px }
     .flut { animation: f 7s ease-in-out infinite alternate }
-    @keyframes f { from { transform: translateY(3px) } to { transform: translateY(-4px) } }
+    @keyframes f { from { transform: translateY(5px) } to { transform: translateY(-7px) } }
     .brilho { animation: b 4.5s ease-in-out infinite alternate }
+    .varre { animation: varre 6s ease-in-out 1.2s infinite }
+    @keyframes varre { 0%{transform:translateX(0) rotate(20deg)} 40%,100%{transform:translateX(720px) rotate(20deg)} }
     @keyframes b { from { opacity:.55 } to { opacity:1 } }
-    @media (prefers-reduced-motion: reduce){ .flut,.brilho{ animation:none } }
+    @media (prefers-reduced-motion: reduce) and (max-width: 1px){ .flut,.brilho{ animation:none } }
   </style>
   <defs>
     ${defsGlow('gb', 5)}
@@ -109,6 +118,7 @@ function projeto(p, idx, isDark) {
     ${defsWash('wa', c, isDark ? .55 : .30)}
     ${defsWash('wb', c2, isDark ? .35 : .18)}
     <clipPath id="card"><rect width="${W}" height="${H}" rx="20"/></clipPath>
+    <linearGradient id="luzp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".28"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
     <clipPath id="tela"><rect x="${FX}" y="${FY + BAR}" width="${FW}" height="${FH - BAR}" rx="0"/></clipPath>
     <clipPath id="moldura"><rect x="${FX}" y="${FY}" width="${FW}" height="${FH}" rx="12"/></clipPath>
     <linearGradient id="fio" x1="0" y1="0" x2="1" y2="0">
@@ -147,6 +157,7 @@ function projeto(p, idx, isDark) {
       <rect x="${FX + 66}" y="${FY + 6}" width="${FW - 132}" height="14" rx="7" fill="${isDark ? '#1C2030' : '#FFFFFF'}"/>
       <image clip-path="url(#tela)" x="${FX}" y="${FY + BAR}" width="${FW}" height="${FH - BAR}" preserveAspectRatio="xMidYMin slice" xlink:href="data:image/jpeg;base64,${img}"/>
     </g>
+    <g clip-path="url(#moldura)"><rect class="varre" x="${FX - 200}" y="${FY - 80}" width="90" height="${FH + 160}" fill="url(#luzp)" transform="rotate(20 ${FX} ${FY})"/></g>
     <rect x="${FX + .5}" y="${FY + .5}" width="${FW - 1}" height="${FH - 1}" rx="12" fill="none" stroke="${isDark ? '#FFFFFF' : '#0B1020'}" stroke-opacity=".14"/>
   </g>
 </svg>

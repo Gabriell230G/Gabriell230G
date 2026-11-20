@@ -9,12 +9,17 @@
     .sub { font: 500 13px system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill:#767F97 }
     .cd { opacity:0; animation: ent .55s cubic-bezier(.2,.7,.3,1) forwards }
     @keyframes ent { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:none} }
-    @media (prefers-reduced-motion: reduce){ .cd{opacity:1;animation:none} }
+    .varre { animation: varre 5s ease-in-out 1s infinite }
+    @keyframes varre { 0%{transform:translateX(0) rotate(18deg)} 45%,100%{transform:translateX(480px) rotate(18deg)} }
+    .ico { animation: ico 2.6s ease-in-out infinite }
+    @keyframes ico { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-3px) scale(1.12)} }
   </style>
   <defs><filter id="gb" x="-70%" y="-70%" width="240%" height="240%">
       <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter><radialGradient id="ws0" cx=".15" cy="0" r=".9">
+    </filter>
+    <linearGradient id="luzv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <clipPath id="cs0"><rect x="30" y="14" width="302.6666666666667" height="286" rx="18"/></clipPath><clipPath id="cs1"><rect x="348.6666666666667" y="14" width="302.6666666666667" height="286" rx="18"/></clipPath><clipPath id="cs2"><rect x="667.3333333333334" y="14" width="302.6666666666667" height="286" rx="18"/></clipPath><radialGradient id="ws0" cx=".15" cy="0" r=".9">
       <stop offset="0" stop-color="#B4583A" stop-opacity="0.09"/>
       <stop offset="1" stop-color="#B4583A" stop-opacity="0"/></radialGradient><radialGradient id="ws1" cx=".15" cy="0" r=".9">
       <stop offset="0" stop-color="#1C8752" stop-opacity="0.09"/>
@@ -27,8 +32,10 @@
     <rect x="30" y="14" width="302.6666666666667" height="286" rx="18" fill="url(#ws0)"/>
     <rect x="30.5" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#B4583A" stroke-opacity="0.26"/>
     <rect x="56" y="14" width="56" height="3" rx="1.5" fill="#B4583A" filter="url(#gb)"/>
+    <g clip-path="url(#cs0)"><rect class="varre" style="animation-delay:0.0s" x="-90" y="-26" width="70" height="366" fill="url(#luzv)" transform="rotate(18 30 14)"/></g>
+    <g class="ico" style="animation-delay:0.0s; transform-origin:74px 60px">
     <circle cx="74" cy="60" r="18" fill="#B4583A" fill-opacity="0.1"/>
-    <g transform="translate(0,0)"><rect x="64" y="54" width="20" height="14" rx="3" fill="none" stroke="#B4583A" stroke-width="2"/>
+    <rect x="64" y="54" width="20" height="14" rx="3" fill="none" stroke="#B4583A" stroke-width="2"/>
       <path d="M70 54v-3h8v3M64 60h20" fill="none" stroke="#B4583A" stroke-width="2" stroke-linejoin="round"/></g>
     <text x="104" y="65" class="rot" fill="#B4583A">HOJE</text>
     <text x="56" y="112" class="tit">Bradesco e FIAP</text>
@@ -45,8 +52,10 @@
     <rect x="348.6666666666667" y="14" width="302.6666666666667" height="286" rx="18" fill="url(#ws1)"/>
     <rect x="349.1666666666667" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#1C8752" stroke-opacity="0.26"/>
     <rect x="374.6666666666667" y="14" width="56" height="3" rx="1.5" fill="#1C8752" filter="url(#gb)"/>
+    <g clip-path="url(#cs1)"><rect class="varre" style="animation-delay:0.5s" x="228.66666666666669" y="-26" width="70" height="366" fill="url(#luzv)" transform="rotate(18 348.6666666666667 14)"/></g>
+    <g class="ico" style="animation-delay:0.4s; transform-origin:392.6666666666667px 60px">
     <circle cx="392.6666666666667" cy="60" r="18" fill="#1C8752" fill-opacity="0.1"/>
-    <g transform="translate(0,0)"><path d="M387.6666666666667 54l-6 6 6 6M397.6666666666667 54l6 6-6 6M394.6666666666667 52l-4 16" fill="none" stroke="#1C8752" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <path d="M387.6666666666667 54l-6 6 6 6M397.6666666666667 54l6 6-6 6M394.6666666666667 52l-4 16" fill="none" stroke="#1C8752" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
     <text x="422.6666666666667" y="65" class="rot" fill="#1C8752">NO CÓDIGO</text>
     <text x="374.6666666666667" y="112" class="tit">Java, front-end, UX/UI e IA</text>
     <text x="374.6666666666667" y="140" class="txt">Transformo processo manual, planilha</text>
@@ -62,8 +71,10 @@
     <rect x="667.3333333333334" y="14" width="302.6666666666667" height="286" rx="18" fill="url(#ws2)"/>
     <rect x="667.8333333333334" y="14.5" width="301.6666666666667" height="285" rx="18" fill="none" stroke="#A8741A" stroke-opacity="0.26"/>
     <rect x="693.3333333333334" y="14" width="56" height="3" rx="1.5" fill="#A8741A" filter="url(#gb)"/>
+    <g clip-path="url(#cs2)"><rect class="varre" style="animation-delay:1.0s" x="547.3333333333334" y="-26" width="70" height="366" fill="url(#luzv)" transform="rotate(18 667.3333333333334 14)"/></g>
+    <g class="ico" style="animation-delay:0.8s; transform-origin:711.3333333333334px 60px">
     <circle cx="711.3333333333334" cy="60" r="18" fill="#A8741A" fill-opacity="0.1"/>
-    <g transform="translate(0,0)"><path d="M704.3333333333334 49l4 8M718.3333333333334 49l-4 8" stroke="#A8741A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M704.3333333333334 49l4 8M718.3333333333334 49l-4 8" stroke="#A8741A" stroke-width="3" stroke-linecap="round"/>
       <circle cx="711.3333333333334" cy="64" r="7" fill="none" stroke="#A8741A" stroke-width="2.2"/>
       <circle cx="711.3333333333334" cy="64" r="2.4" fill="#A8741A"/></g>
     <text x="741.3333333333334" y="65" class="rot" fill="#A8741A">NO TATAME</text>
