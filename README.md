@@ -81,15 +81,11 @@
 
 ### Tecnologias
 
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=java,js,html,css,react,nodejs,postgres,supabase&theme=dark" alt="Java, JavaScript, HTML, CSS, React, Node.js, PostgreSQL, Supabase">
-<br>
-<img src="https://skillicons.dev/icons?i=git,github,vscode,idea,figma&theme=dark" alt="Git, GitHub, VS Code, IntelliJ IDEA, Figma">
-
-<sub>Estudando agora: desenvolvimento de software, inteligência artificial, automação de processos, Java e front-end</sub>
-
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/tecnologias-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/tecnologias-light.svg">
+  <img alt="Tecnologias: Java, JavaScript, HTML, CSS, React, Node.js, PostgreSQL, Supabase, Git, GitHub, IntelliJ e Figma. Estudando agora: desenvolvimento de software, inteligência artificial, automação de processos, Java e front-end" src="https://raw.githubusercontent.com/Gabriell230G/Gabriell230G/main/assets/tecnologias-dark.svg" width="100%">
+</picture>
 
 ---
 

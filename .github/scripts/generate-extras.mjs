@@ -1,7 +1,8 @@
 // Quadro de medalhas, "Fora do teclado" e frases que se revezam.
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { FONT, dark, light, esc, fontFaces, DISPLAY, defsGlow, degrade } from './tokens.mjs';
-import { HOBBIES, FRASES } from './data.mjs';
+import { HOBBIES, FRASES, TECNOLOGIAS, ESTUDANDO } from './data.mjs';
+import { readFileSync } from 'node:fs';
 
 mkdirSync('assets', { recursive: true });
 const temas = [['dark', true], ['light', false]];
@@ -146,5 +147,57 @@ function frases(isDark) {
 `;
 }
 for (const [nm, d] of temas) save(`frases-${nm}.svg`, frases(d));
+
+// ---------------------------------------------------------------- tecnologias
+function tecnologias(isDark) {
+  const t = isDark ? dark : light;
+  const W = 1000, cols = 6, gap = 12, TW = (W - 60 - gap * (cols - 1)) / cols, TH = 96;
+  const linhas = Math.ceil(TECNOLOGIAS.length / cols);
+  const yEst = 14 + linhas * (TH + gap) + 20;
+  // chips do "estudando agora", centralizados
+  const larg = ESTUDANDO.map((e) => e.length * 7.3 + 40), totalW = larg.reduce((a, b) => a + b, 0) + 10 * (ESTUDANDO.length - 1);
+  let cx = (W - totalW) / 2;
+  const chips = ESTUDANDO.map((e, i) => {
+    const c = degrade(i, ESTUDANDO.length, isDark), w = larg[i];
+    const el = `<g class="cd" style="animation-delay:${(0.7 + i * 0.07).toFixed(2)}s">
+      <rect x="${cx}" y="${yEst + 22}" width="${w}" height="32" rx="16" fill="${c}" fill-opacity="${isDark ? .10 : .09}" stroke="${c}" stroke-opacity=".45"/>
+      <circle cx="${cx + 16}" cy="${yEst + 38}" r="3.5" fill="${c}" class="pul" style="animation-delay:${(i * 0.4).toFixed(1)}s"/>
+      <text x="${cx + 27}" y="${yEst + 42.5}" class="chip" fill="${t.text}">${esc(e)}</text></g>`;
+    cx += w + 10;
+    return el;
+  }).join('');
+  const H = yEst + 22 + 32 + 16;
+  const tiles = TECNOLOGIAS.map(([ic, nome], i) => {
+    const col = i % cols, row = Math.floor(i / cols);
+    const x = 30 + col * (TW + gap), y = 14 + row * (TH + gap), c = degrade(i, TECNOLOGIAS.length, isDark);
+    const d = readFileSync(`.github/scripts/icones/${ic}.txt`, 'utf8').trim();
+    const S = 30, ix = x + TW / 2 - S / 2, iy = y + 18;
+    return `<g class="cd" style="animation-delay:${(i * 0.045).toFixed(2)}s">
+    <rect x="${x}" y="${y}" width="${TW}" height="${TH}" rx="16" fill="${t.card}"/>
+    <rect x="${x}" y="${y}" width="${TW}" height="${TH}" rx="16" fill="url(#tg${i})"/>
+    <rect x="${x + .5}" y="${y + .5}" width="${TW - 1}" height="${TH - 1}" rx="16" fill="none" stroke="${c}" stroke-opacity="${isDark ? .28 : .30}"/>
+    <path d="${d}" fill="${c}" transform="translate(${ix},${iy}) scale(${S / 24})"/>
+    <text x="${x + TW / 2}" y="${y + 76}" text-anchor="middle" class="nm">${esc(nome)}</text>
+  </g>`;
+  }).join('\n  ');
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Tecnologias: ${TECNOLOGIAS.map(([, n]) => n).join(', ')}. Estudando agora: ${ESTUDANDO.join(', ')}">
+  <style>
+    ${fontFaces('brico-500')}
+    .nm   { font: 500 14px ${DISPLAY}; fill:${t.text} }
+    .chip { font: 500 13px ${FONT} }
+    .k    { font: 700 11px ${FONT}; letter-spacing:2.2px; fill:${t.muted} }
+    ${ENTRA}
+    .pul { animation: pul 2.4s ease-in-out infinite }
+    @keyframes pul { 0%,100%{opacity:1} 50%{opacity:.35} }
+    @media (prefers-reduced-motion: reduce){ .cd{opacity:1;animation:none} .pul{animation:none} }
+  </style>
+  <defs>${TECNOLOGIAS.map((_, i) => bleed(`tg${i}`, degrade(i, TECNOLOGIAS.length, isDark), isDark ? .16 : .08)).join('')}</defs>
+  ${tiles}
+  <text x="${W / 2}" y="${yEst + 8}" text-anchor="middle" class="k">ESTUDANDO AGORA</text>
+  ${chips}
+</svg>
+`;
+}
+for (const [nm, d] of temas) save(`tecnologias-${nm}.svg`, tecnologias(d));
 
 console.log(out.join('\n'));

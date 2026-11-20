@@ -25,7 +25,6 @@
     </linearGradient>
     <clipPath id="barra"><rect x="30" y="198" width="940" height="16" rx="8"/></clipPath>
   </defs>
-  <rect width="1000" height="188" fill="#FFFFFF" rx="18"/>
   
     <g>
       <rect x="30" y="30" width="300" height="128" rx="16" fill="#FFFFFF"/>

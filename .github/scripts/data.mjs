@@ -129,3 +129,10 @@ export const FRASES = [
   { l: ['Perder faz parte da mensagem.'] },
   { l: ['Você não nasceu para ser salvo.', 'Você nasceu para salvar outras pessoas.'] },
 ];
+
+// Tecnologias (icones do Simple Icons, CC0) e o que estou estudando agora
+export const TECNOLOGIAS = [
+  ['openjdk', 'Java'], ['javascript', 'JavaScript'], ['html5', 'HTML'], ['css', 'CSS'], ['react', 'React'], ['nodedotjs', 'Node.js'],
+  ['postgresql', 'PostgreSQL'], ['supabase', 'Supabase'], ['git', 'Git'], ['github', 'GitHub'], ['intellijidea', 'IntelliJ'], ['figma', 'Figma'],
+];
+export const ESTUDANDO = ['Desenvolvimento de software', 'Inteligência artificial', 'Automação de processos', 'Java', 'Front-end'];

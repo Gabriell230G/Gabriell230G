@@ -128,7 +128,6 @@ function build(s, isDark) {
   <defs>${defsGlow('gb', 5)}${defsGlow('gd', 3)}${bleeds}
     <clipPath id="barra"><rect x="30" y="${barY}" width="${barW}" height="16" rx="8"/></clipPath>
   </defs>
-  <rect width="${W}" height="${H}" fill="${t.bg}" rx="18"/>
   ${cardEls}
   ${s.langs.length ? `<g clip-path="url(#barra)"><rect x="30" y="${barY}" width="${barW}" height="16" fill="${t.hair}"/>${segs}</g>${legenda}` : ''}
 </svg>
